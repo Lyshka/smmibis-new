@@ -6,7 +6,7 @@ import { Price } from "@/components/Price/Price";
 import { Projects } from "@/components/Projects/Projects";
 import { MainSlider } from "@/components/Slider/MainSlider";
 
-export const Home = () => {
+const Home = () => {
   return (
     <>
       <MainSlider />
@@ -19,3 +19,5 @@ export const Home = () => {
     </>
   );
 };
+
+export default Home;
