@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply text-[#333] leading-6;
+  }
+}
+
+@layer components {
+  .logo-background {
+    background: linear-gradient(
+      137deg,
+      #fed79a 17.11%,
+      #fe4c27 27.56%,
+      #bc122c 37.94%,
+      #851548 50.28%,
+      #3d215b 60.99%,
+      #001e61 70.08%,
+      #111328 79.43%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .list-header-li {
+    @apply leading-6 tracking-[1px] whitespace-nowrap;
+  }
+
+  .list-header-li-sub {
+    @apply leading-4 tracking-[1px] text-[#333] hover:text-main text-sm;
+  }
+
+  .footer-ul-jobs {
+    @apply text-sm text-[#BBB];
+  }
+
+  .container {
+    @apply 2xl:max-w-[calc(100%-620px)] w-full flex items-center justify-between 2xl:p-0 p-4;
+  }
+
+  .container-footer {
+    @apply 2xl:max-w-[calc(100%-620px)] w-full flex items-end justify-between 2xl:px-0 px-4 2xl:flex-row flex-col;
+  }
+
+  .shadow-btn-select-project {
+    box-shadow: 0px 8px 30px -5px rgba(0, 0, 0, 0.2);
+  }
+
+  .shadow-card-colobaration {
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+  }
+
+  .sliderColoboration {
+    animation: 50s sliderColoborationAnimation infinite linear;
+  }
+
+  .sliderColoboration:hover {
+    animation-play-state: paused;
+  }
+
+  .WrapperSliderColoboration::before {
+    @apply absolute top-0 w-[1%] h-full z-10 left-0 2xl:block hidden;
+    content: "";
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+  }
+
+  @keyframes sliderColoborationAnimation {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
+  .overflow-margin {
+    overflow-clip-margin: 20px;
+  }
+}
