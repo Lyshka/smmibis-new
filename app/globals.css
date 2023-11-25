@@ -6,6 +6,15 @@
   html {
     @apply text-[#333] leading-6;
   }
+
+  .overflow-margin {
+    overflow-clip-margin: 20px;
+  }
+
+  #scrollNews::-webkit-scrollbar {
+    height: 0;
+    width: 0;
+  }
 }
 
 @layer components {
@@ -53,6 +62,10 @@
     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
   }
 
+  .shadow-card-prices {
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+  }
+
   .sliderColoboration {
     animation: 50s sliderColoborationAnimation infinite linear;
   }
@@ -76,7 +89,15 @@
     }
   }
 
-  .overflow-margin {
-    overflow-clip-margin: 20px;
+  .overflow-news-margin {
+    overflow-clip-margin: 100px;
+  }
+
+  .text-hidden-news {
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    display: -webkit-box;
+    text-overflow: ellipsis;
   }
 }

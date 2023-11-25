@@ -1,5 +1,5 @@
 import { delagothicone } from "@/assets/font";
-import { Title } from "./Title";
+import { Title } from "./Title/Title";
 import { CommentsSlider } from "./Slider/CommentsSlider";
 
 export const Comments = () => {

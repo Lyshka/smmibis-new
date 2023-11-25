@@ -1,0 +1,48 @@
+import Image, { StaticImageData } from "next/image";
+import { ServiceSubTitle } from "../Title/ServiceSubTitle";
+import { Button } from "../Button/Button";
+
+interface IServiceAbout {
+  title: string;
+  img: StaticImageData;
+}
+
+export const ServiceAbout = ({ img, title }: IServiceAbout) => {
+  return (
+    <section className="flex 2xl:flex-row flex-col-reverse 2xl:py-0 py-4 items-center 2xl:gap-6 gap-4 justify-between">
+      <div className="flex flex-col 2xl:gap-8 gap-4">
+        <div className="flex gap-2 flex-col">
+          <ServiceSubTitle text={title} />
+
+          <p className="text-base leading-6">
+            Для получения индивидуального предложения, заполните форму ниже. Мы
+            свяжемся с вами в ближайшее время.
+          </p>
+        </div>
+
+        <div className="flex 2xl:justify-start justify-center items-center">
+          <Button variant="outlined" className="font-medium">
+            Получить предложение
+          </Button>
+        </div>
+      </div>
+
+      <Image
+        priority={true}
+        src={img}
+        alt="service"
+        height={288}
+        width={488}
+        className="2xl:block hidden rounded-2xl"
+      />
+
+      <Image
+        priority={true}
+        src={img}
+        alt="service"
+        height={288}
+        className="2xl:hidden block w-full rounded-2xl"
+      />
+    </section>
+  );
+};

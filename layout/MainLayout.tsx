@@ -1,6 +1,8 @@
+import NextTopLoader from "nextjs-toploader";
+import { ReactNode } from "react";
+
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header/Header";
-import { ReactNode } from "react";
 
 interface IMainLayout {
   children: ReactNode;
@@ -9,6 +11,7 @@ interface IMainLayout {
 export const MainLayout = ({ children }: IMainLayout) => {
   return (
     <div className="min-h-screen max-w-full">
+      <NextTopLoader />
       <Header />
       <main>{children}</main>
       <Footer />

@@ -16,7 +16,7 @@ export const Header = () => {
   const { isOpenMenuHeader, toggleMenuHeader } = useContext(MainContext);
 
   return (
-    <header className="flex 2xl:flex-row flex-col justify-center 2xl:py-4 py-0 border-b-2 border-[#F4F4F4]">
+    <header className="flex 2xl:flex-row flex-col justify-center items-center 2xl:py-4 py-0 border-b-2 border-[#F4F4F4]">
       <div className="container">
         <Link
           href={"/"}
@@ -62,7 +62,9 @@ export const Header = () => {
         </div>
       </div>
 
-      <MenuMobileHeader />
+      <div className="container 2xl:hidden py-0">
+        <MenuMobileHeader />
+      </div>
     </header>
   );
 };

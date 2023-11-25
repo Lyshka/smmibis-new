@@ -12,12 +12,12 @@ export const Button = ({ variant = "primary", ...props }: MainButtonProps) => {
     <button
       {...props}
       className={clsx(
-        "2xl:py-4 py-2 px-6 rounded-[100px] text-lg",
+        "py-4 px-6 rounded-[100px] 2xl:text-lg text-sm",
         props.className,
         {
           primary: "bg-main text-white",
           secondary: "bg-white",
-          outlined: "",
+          outlined: "bg-white border-2 border-main",
         }[variant]
       )}
     />

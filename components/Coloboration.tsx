@@ -1,5 +1,5 @@
 import { ColaborationSlider } from "./Slider/ColaborationSlider";
-import { Title } from "./Title";
+import { Title } from "./Title/Title";
 
 export const Coloboration = () => {
   return (

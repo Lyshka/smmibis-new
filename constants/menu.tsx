@@ -1,5 +1,4 @@
-import { TelegramIcon } from "@/assets/img/TelegramIcon";
-import { FaInstagram } from "react-icons/fa6";
+import { services } from "./services";
 
 export const mainMenu = [
   {
@@ -20,12 +19,12 @@ export const mainMenu = [
   {
     id: 4,
     title: "Услуги и цены",
-    url: "/price",
+    url: `services/${services[0].url}`,
     addition: [
       {
         id: 1,
         title: "Разработка сайта",
-        url: "/site-development",
+        url: "/site-creation",
       },
       {
         id: 2,
@@ -102,7 +101,7 @@ export const mainMenu = [
   {
     id: 5,
     title: "Новости",
-    url: "/#news",
+    url: "/news",
   },
   {
     id: 6,

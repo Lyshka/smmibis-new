@@ -21,8 +21,8 @@ export const MenuMobileHeader = () => {
   return (
     <>
       {isOpenMenuHeader && (
-        <div className="2xl:hidden">
-          <ul className="flex p-4 flex-col gap-6 border-b-2 border-[#F4F4F4] pb-4">
+        <div className="flex flex-col">
+          <ul className="flex flex-col gap-6 border-b-2 border-[#F4F4F4] pb-4">
             {mainMenu.map(({ id, title, url, addition }) => (
               <li key={id} className="list-header-li group hover:text-main">
                 <>
@@ -59,7 +59,7 @@ export const MenuMobileHeader = () => {
             ))}
           </ul>
 
-          <div className="py-6 px-4 flex flex-col gap-2 font-medium">
+          <div className="py-6 flex flex-col gap-2 font-medium">
             <Link
               className="flex items-center gap-4"
               href={"tel:+375339157676"}
@@ -95,7 +95,7 @@ const SubMenu = ({ addition }: ISubMenu) => {
   return (
     <ul className="p-6 pb-0 flex flex-col gap-6">
       {addition?.map(({ id, title, url }) => (
-        <Link key={id} href={url}>
+        <Link key={id} href={`/services/${url}`}>
           <li className="list-header-li-sub">{title}</li>
         </Link>
       ))}

@@ -2,16 +2,26 @@ import Image from "next/image";
 import { RiPhoneFill } from "react-icons/ri";
 
 import { contact } from "@/assets/img";
-import { Title } from "./Title";
+import { Title } from "./Title/Title";
 import Link from "next/link";
 import { MailIcon } from "@/assets/img/MailIcon";
 import { LocationIcon } from "@/assets/img/LocationIcon";
+import clsx from "clsx";
 
-export const Contacts = () => {
+interface IContacts {
+  dark?: boolean;
+}
+
+export const Contacts = ({ dark = true }: IContacts) => {
   return (
-    <section className="flex justify-center items-center bg-[#171717]">
-      <div className="container flex 2xl:flex-row flex-col-reverse gap-6 2xl:py-[104px] pt-10">
-        <div className="flex flex-col 2xl:justify-between justify-center 2xl:gap-10 gap-8 2xl:h-[360px] h-full text-white">
+    <section
+      className={clsx(
+        "flex justify-center items-center w-full",
+        dark ? "bg-[#171717] text-white" : "bg-white text-[#333]"
+      )}
+    >
+      <div className="container flex 2xl:flex-row flex-col-reverse gap-6 2xl:py-[104px] pt-10 2xl:items-center items-start">
+        <div className="flex flex-col 2xl:justify-between justify-center 2xl:gap-10 gap-8 2xl:h-[360px] h-full">
           <Title text="Контакты" />
 
           <div className="flex flex-col 2xl:gap-4 gap-2 2xl:w-[527px] w-full">
@@ -61,7 +71,7 @@ export const Contacts = () => {
               </ul>
             </div>
 
-            <div className="flex flex-col gap-2 col-span-3">
+            <div className="flex flex-col gap-2 2xl:col-auto col-span-3">
               <div className="flex items-center gap-2">
                 <LocationIcon className="2xl:w-6 w-4 2xl:h-6 h-4" />
 
