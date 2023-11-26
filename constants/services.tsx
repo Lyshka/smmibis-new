@@ -1,4 +1,19 @@
-import { siteCreation } from "@/assets/img";
+import {
+  bookingService,
+  contextualAdvertising,
+  developmentOfAUniqueDesign,
+  functionalMarketingDepartment,
+  otherServices,
+  outdoorAdvertising,
+  promotionOnMarketplaces,
+  seoPromotion,
+  siteCreation,
+  smmPromotion,
+  targetedAdvertising,
+  tiktokPromotion,
+  videoProduction,
+  websiteMaintenance,
+} from "@/assets/img";
 import { ComputerCreationAdnetage } from "@/assets/img/ComputerSiteCreationAdnetage";
 import { PaintsCreationAdnetage } from "@/assets/img/PaintsSiteCreationAdnetage";
 import { MedalSiteCreationAdnetage } from "@/assets/img/MedalSiteCreationAdnetage";
@@ -38,7 +53,6 @@ export const services = [
     cards: [
       {
         id: 1,
-        title: "Разработка сайтов",
         valuableBYN: "400",
         valuableRUB: "15000",
         month: false,
@@ -69,7 +83,6 @@ export const services = [
       },
       {
         id: 2,
-        title: "Разработка сайтов",
         valuableBYN: "800",
         valuableRUB: "25000",
         month: false,
@@ -104,7 +117,6 @@ export const services = [
       },
       {
         id: 3,
-        title: "Разработка сайтов",
         valuableBYN: "1500",
         valuableRUB: "45000",
         month: false,
@@ -133,7 +145,6 @@ export const services = [
       },
       {
         id: 4,
-        title: "Разработка сайтов",
         valuableBYN: "2500",
         valuableRUB: "90000",
         month: false,
@@ -161,6 +172,172 @@ export const services = [
           {
             id: 6,
             title: "интерактивный помощник",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: 2,
+    url: "website-maintenance",
+    title: "Обслуживание сайта",
+    img: websiteMaintenance,
+    advantages: {
+      title: "Преимущества наших сайтов",
+      list: [
+        {
+          id: 1,
+          title: "Регулярные обновления и безопасность",
+          description:
+            "Мы обеспечиваем постоянное обновление вашего сайта, следим за его безопасностью и защищаем от угроз, что обеспечивает надежную и стабильную работу онлайн-платформы.",
+          imgAdvantage: <MedalSiteCreationAdnetage className="w-8 h-8" />,
+        },
+        {
+          id: 2,
+          title: "Профессиональная поддержка и быстрое реагирование",
+          description:
+            "Наша команда технической поддержки всегда готова помочь и ответить на ваши вопросы. Мы гарантируем быстрое реагирование на любые запросы, что позволяет избежать простоев и проблем на сайте.",
+          imgAdvantage: <PaintsCreationAdnetage className="w-8 h-8" />,
+        },
+        {
+          id: 3,
+          title: "Повышение производительности и оптимизация",
+          description:
+            "Мы оптимизируем ваш сайт для более эффективной работы, что повышает его производительность и ускоряет загрузку страниц. Это улучшает пользовательский опыт и способствует увеличению конверсии и доходов.",
+          imgAdvantage: <ComputerCreationAdnetage className="w-8 h-8" />,
+        },
+      ],
+    },
+    cards: [
+      {
+        id: 1,
+        valuableBYN: "400",
+        valuableRUB: "15000",
+        month: true,
+        includeServices: [
+          {
+            id: 1,
+            title: "Ежемесячное техническому сопровождению сайта",
+          },
+          {
+            id: 2,
+            title: "Устранение ошибок",
+          },
+          {
+            id: 3,
+            title: "Обновление контента",
+          },
+          {
+            id: 4,
+            title: "Подготовка контента",
+          },
+          {
+            id: 6,
+            title: "Наполнение сайта",
+          },
+          {
+            id: 7,
+            title: "Установка/ изменения плагинов, счетчиков",
+          },
+          {
+            id: 8,
+            title: "Написание и публикация новостей",
+          },
+          {
+            id: 9,
+            title: "Добавление новых страниц",
+          },
+          {
+            id: 10,
+            title: "До 30 часов выполнения работ работы в месяц",
+          },
+        ],
+      },
+      {
+        id: 2,
+        valuableBYN: "600",
+        valuableRUB: "20000",
+        month: true,
+        includeServices: [
+          {
+            id: 1,
+            title: "Ежемесячное техническому сопровождению сайта",
+          },
+          {
+            id: 2,
+            title: "Устранение ошибок",
+          },
+          {
+            id: 3,
+            title: "Обновление контента",
+          },
+          {
+            id: 4,
+            title: "Подготовка контента",
+          },
+          {
+            id: 5,
+            title: "Наполнение сайта",
+          },
+          {
+            id: 6,
+            title: "Установка/ изменения плагинов, счетчиков",
+          },
+          {
+            id: 7,
+            title: "Написание и публикация новостей",
+          },
+          {
+            id: 8,
+            title: "Добавление новых страниц",
+          },
+          {
+            id: 9,
+            title: "До 50 часов выполнения работ работы в месяц",
+          },
+        ],
+      },
+      {
+        id: 3,
+        valuableBYN: "18",
+        valuableRUB: "500",
+        month: false,
+        includeServices: [
+          {
+            id: 1,
+            title: "Разовые работы техническому сопровождению сайта",
+          },
+          {
+            id: 2,
+            title: "Устранение ошибок",
+          },
+          {
+            id: 3,
+            title: "Обновление контента",
+          },
+          {
+            id: 4,
+            title: "Подготовка контента",
+          },
+          {
+            id: 5,
+            title: "Наполнение сайта",
+          },
+          {
+            id: 6,
+            title: "Установка/ изменения плагинов, счетчиков",
+          },
+          {
+            id: 7,
+            title: "Написание и публикация новостей",
+          },
+          {
+            id: 8,
+            title: "Добавление новых страниц",
+          },
+          {
+            id: 9,
+            title: "За 1 час выполнения работ",
           },
         ],
       },

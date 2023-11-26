@@ -24,19 +24,54 @@ import comment1 from "./comment/comment1.webp";
 import comment2 from "./comment/comment2.webp";
 import comment3 from "./comment/comment3.webp";
 
-import main_slide_1 from "./main_slide_1.png";
-import main_slide_1_mobile from "./main_slide_1_mobile.webp";
-import price1 from "./price1.png";
-import project1 from "./kedr-bor.png";
-import project2 from "./kross-motoes.png";
-import project3 from "./royal-club.png";
-import project4 from "./royal-park.png";
-import project5 from "./starfood.png";
-import project6 from "./t1.png";
+import banner1 from "./MainSlide/banner1.webp";
+import banner2 from "./MainSlide/banner2.webp";
+import banner3 from "./MainSlide/banner3.webp";
+import banner1_mobile from "./MainSlide/banner1_mobile.webp";
+import banner2_mobile from "./MainSlide/banner2_mobile.webp";
+import banner3_mobile from "./MainSlide/banner3_mobile.webp";
 
+import funcMain from "./priceMainPage/func.webp";
+import outMain from "./priceMainPage/out.webp";
+import seoMain from "./priceMainPage/seo.webp";
+import smmMain from "./priceMainPage/smm.webp";
+import targetMain from "./priceMainPage/target.webp";
+import webMain from "./priceMainPage/web.webp";
+
+import project1_smm from "./projects/avansum_smm.webp";
+import project2_smm from "./projects/cold-frog_smm.webp";
+import project3_site from "./projects/dsk_site.webp";
+import project4_site from "./projects/jac_site.webp";
+import project5_smm from "./projects/jac_smm.webp";
+import project6_smm from "./projects/kedrbor_smm.webp";
+import project7_smm from "./projects/kross-motors_smm.webp";
+import project8_smm from "./projects/lesnoy-bor_smm.webp";
+import project9_site from "./projects/miracle_site.webp";
+import project10_site from "./projects/rmc_site.webp";
+import project11_site from "./projects/royal-club_site.webp";
+import project12_smm from "./projects/royal-club_smm.webp";
+import project13_site from "./projects/royal-park_site.webp";
+import project14_smm from "./projects/royal-park_smm.webp";
+import project15_smm from "./projects/star-food_smm.webp";
+import project16_site from "./projects/t1_site.webp";
+import project17_smm from "./projects/t1_smm.webp";
+
+import bookingService from "./services/booking-service.webp";
+import contextualAdvertising from "./services/contextual-advertising.webp";
+import developmentOfAUniqueDesign from "./services/development-of-a-unique-design.webp";
+import functionalMarketingDepartment from "./services/functional-marketing-department.webp";
+import otherServices from "./services/other-services.webp";
+import outdoorAdvertising from "./services/outdoor-advertising.webp";
+import promotionOnMarketplaces from "./services/promotion-on-marketplaces.webp";
+import seoPromotion from "./services/seo-promotion.webp";
+import siteCreation from "./services/site-creation.webp";
+import smmPromotion from "./services/smm-promotion.webp";
+import targetedAdvertising from "./services/targeted-advertising.webp";
+import tiktokPromotion from "./services/tiktok-promotion.webp";
+import videoProduction from "./services/video-production.webp";
+import websiteMaintenance from "./services/website-maintenance.webp";
 
 import contact from "./contact.png";
-import siteCreation from "./site-creation.png";
 import backgroundServidesMail from "./backgroundServidesMail.jpeg";
 
 export {
@@ -46,18 +81,36 @@ export {
   news4,
   news5,
   news6,
-
   bgNews,
-
-  main_slide_1,
-  main_slide_1_mobile,
-  price1,
-  project1,
-  project2,
-  project3,
-  project4,
-  project5,
-  project6,
+  banner1,
+  banner1_mobile,
+  banner2,
+  banner2_mobile,
+  banner3,
+  banner3_mobile,
+  funcMain,
+  outMain,
+  seoMain,
+  smmMain,
+  targetMain,
+  webMain,
+  project10_site,
+  project11_site,
+  project12_smm,
+  project13_site,
+  project14_smm,
+  project15_smm,
+  project16_site,
+  project17_smm,
+  project1_smm,
+  project2_smm,
+  project3_site,
+  project4_site,
+  project5_smm,
+  project6_smm,
+  project7_smm,
+  project8_smm,
+  project9_site,
   colabAvansum,
   colabDsk,
   colabJac,
@@ -73,7 +126,20 @@ export {
   comment1,
   comment2,
   comment3,
-  contact,
+  bookingService,
+  contextualAdvertising,
+  developmentOfAUniqueDesign,
+  functionalMarketingDepartment,
+  otherServices,
+  outdoorAdvertising,
+  promotionOnMarketplaces,
+  seoPromotion,
   siteCreation,
+  smmPromotion,
+  targetedAdvertising,
+  tiktokPromotion,
+  videoProduction,
+  websiteMaintenance,
+  contact,
   backgroundServidesMail,
 };

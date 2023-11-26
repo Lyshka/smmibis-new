@@ -87,11 +87,6 @@ export const mainMenu = [
         url: "/other-services",
       },
       {
-        id: 14,
-        title: "Готовые сайты",
-        url: "/ready-made-sites",
-      },
-      {
         id: 15,
         title: "Функциональный отдел маркетинга",
         url: "/functional-marketing-department",

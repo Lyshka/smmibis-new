@@ -8,12 +8,12 @@ import clsx from "clsx";
 
 interface IPriceCard {
   priceCard: priceList;
+  title: string
 }
 
-export const PriceCard = ({ priceCard }: IPriceCard) => {
+export const PriceCard = ({ priceCard, title }: IPriceCard) => {
   const {
     includeServices,
-    title,
     valuableBYN,
     valuableRUB,
     month,

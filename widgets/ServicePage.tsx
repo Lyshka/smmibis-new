@@ -21,7 +21,7 @@ export const ServicePage = ({ idSevice }: IServicePage) => {
       <ServiceAbout title={title} img={img} />
       <Advantage advantages={advantages} />
       <ServiceProject />
-      <Prices pricesCards={cards} />
+      <Prices pricesCards={cards} title={title}/>
     </div>
   );
 };

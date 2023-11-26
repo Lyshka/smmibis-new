@@ -16,16 +16,17 @@ export type priceList = {
 
 interface IPrices {
   pricesCards: priceList[];
+  title: string
 }
 
-export const Prices = ({ pricesCards }: IPrices) => {
+export const Prices = ({ pricesCards, title }: IPrices) => {
   return (
     <section className="flex flex-col gap-6 2xl:py-0 py-12">
       <ServiceSubTitle text="Наши цены" />
 
       <div className="2xl:grid flex grid-cols-2 gap-6 items-start 2xl:overflow-x-auto overflow-x-scroll">
         {pricesCards.map((priceCard) => (
-          <PriceCard key={priceCard.id} priceCard={priceCard} />
+          <PriceCard key={priceCard.id} priceCard={priceCard} title={title} />
         ))}
       </div>
     </section>
