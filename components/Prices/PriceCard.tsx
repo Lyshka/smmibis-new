@@ -8,17 +8,12 @@ import clsx from "clsx";
 
 interface IPriceCard {
   priceCard: priceList;
-  title: string
+  title: string;
 }
 
 export const PriceCard = ({ priceCard, title }: IPriceCard) => {
-  const {
-    includeServices,
-    valuableBYN,
-    valuableRUB,
-    month,
-    description,
-  } = priceCard;
+  const { includeServices, valuableBYN, valuableRUB, month, description } =
+    priceCard;
 
   const [open, setOpen] = useState(false);
 
@@ -44,15 +39,20 @@ export const PriceCard = ({ priceCard, title }: IPriceCard) => {
         </div>
 
         <div className="p-6 pt-0 flex flex-1 flex-col items-center gap-4 bg-main text-white">
-          <div className="flex gap-3 items-end font-bold leading-6 2xl:text-lg text-base">
-            <span>От</span>
-            <p className="2xl:text-[64px] text-[56px] font-black 2xl:leading-[64px] leading-[56px]">
-              {valuableRUB}
-            </p>
-            <span className="flex-1">RUB{month && "/месяц"}</span>
-          </div>
+          {valuableRUB && (
+            <div className="flex gap-3 items-end font-bold leading-6 2xl:text-lg text-base">
+              <span>От</span>
+              <p className="2xl:text-[64px] text-[56px] font-black 2xl:leading-[64px] leading-[56px]">
+                {valuableRUB}
+              </p>
+              <span className="flex-1">RUB{month && "/месяц"}</span>
+            </div>
+          )}
 
-          <p className="text-base font-semibold leading-4">{description}</p>
+          <p
+            className="text-base font-semibold leading-4"
+            dangerouslySetInnerHTML={{ __html: description || "" }}
+          />
         </div>
       </div>
 

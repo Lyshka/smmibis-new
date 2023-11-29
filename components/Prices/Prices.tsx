@@ -3,9 +3,8 @@ import { PriceCard } from "./PriceCard";
 
 export type priceList = {
   id: number;
-  title: string;
   valuableBYN: string;
-  valuableRUB: string;
+  valuableRUB?: string;
   month: boolean;
   description?: string;
   includeServices: {
@@ -16,7 +15,7 @@ export type priceList = {
 
 interface IPrices {
   pricesCards: priceList[];
-  title: string
+  title: string;
 }
 
 export const Prices = ({ pricesCards, title }: IPrices) => {

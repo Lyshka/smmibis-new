@@ -3,6 +3,8 @@ import { Coloboration } from "@/components/Coloboration";
 import { Comments } from "@/components/Comments";
 import { Contacts } from "@/components/Contacts";
 import { News } from "@/components/News/News";
+import { DiscountPopup } from "@/components/Popup/DiscountPopup";
+import { FeedbackPopup } from "@/components/Popup/FeedbackPopup";
 import { Price } from "@/components/Price/Price";
 import { Projects } from "@/components/Projects/Projects";
 import { MainSlider } from "@/components/Slider/MainSlider";
@@ -18,6 +20,8 @@ export default function Home() {
       <Comments />
       <Contacts />
       <News />
+      <DiscountPopup />
+      <FeedbackPopup />
     </>
   );
 }

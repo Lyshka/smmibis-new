@@ -10,7 +10,7 @@ interface IImgZoomPopup {
 
 export const ImgZoomPopup = ({ onOpen, img }: IImgZoomPopup) => {
   return (
-    <div className="fixed h-screen w-full bg-black/95 inset-0 z-[999] flex justify-center items-center">
+    <section className="fixed h-screen w-full bg-black/95 inset-0 z-[999] flex justify-center items-center">
       <Image
         className="2xl:block hidden h-4/5 w-4/5 object-contain"
         src={img}
@@ -25,6 +25,6 @@ export const ImgZoomPopup = ({ onOpen, img }: IImgZoomPopup) => {
       <button onClick={onOpen} className="absolute top-5 right-5">
         <IoCloseOutline className="text-white w-10 h-10" />
       </button>
-    </div>
+    </section>
   );
 };

@@ -2,15 +2,16 @@ import { AdvantageList } from "./Advantage";
 
 interface ICardAdvantage {
   advantage: AdvantageList;
+  img: JSX.Element;
 }
 
-export const CardAdvantage = ({ advantage }: ICardAdvantage) => {
-  const { description, imgAdvantage, title } = advantage;
+export const CardAdvantage = ({ advantage, img }: ICardAdvantage) => {
+  const { description, title } = advantage;
 
   return (
-    <div className="flex h-56 py-6 flex-col justify-center items-center flex-1 rounded-2xl border border-[#BBB]">
-      <div className="flex h-[176px] flex-col items-center gap-4">
-        {imgAdvantage}
+    <div className="flex py-6 px-[33px] flex-col justify-start items-center flex-1 rounded-2xl border border-[#BBB]">
+      <div className="flex flex-col items-center gap-4">
+        {img}
 
         <div className="flex flex-col items-center gap-2">
           <h4 className="text-center text-lg font-bold leading-6">{title}</h4>

@@ -2,7 +2,7 @@ import { NewsAbout } from "@/components/News/NewsAbout";
 import { Contacts } from "@/components/Contacts";
 import { ListNews } from "@/components/News/ListNews";
 
-const News = () => {
+export default function News() {
   return (
     <>
       <NewsAbout />
@@ -12,5 +12,4 @@ const News = () => {
       <Contacts dark={false} />
     </>
   );
-};
-export default News;
+}

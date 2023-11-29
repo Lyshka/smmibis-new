@@ -71,6 +71,8 @@ import tiktokPromotion from "./services/tiktok-promotion.webp";
 import videoProduction from "./services/video-production.webp";
 import websiteMaintenance from "./services/website-maintenance.webp";
 
+import popUpFeedback from "./other/popUpFeedback.webp"
+
 import contact from "./contact.png";
 import backgroundServidesMail from "./backgroundServidesMail.jpeg";
 
@@ -140,6 +142,7 @@ export {
   tiktokPromotion,
   videoProduction,
   websiteMaintenance,
+  popUpFeedback,
   contact,
   backgroundServidesMail,
 };

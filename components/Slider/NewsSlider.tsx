@@ -9,12 +9,15 @@ import { news } from "@/constants/news";
 import { Carousel } from "@material-tailwind/react";
 import { Button } from "../Button/Button";
 import { delagothicone } from "@/assets/font";
+import Link from "next/link";
+import { translatorToEn } from "@/utils/translator";
 
 export const NewsSlider = () => {
   const [activeSlide, setActiveSlide] = useState(0);
 
   const newsLength = news.length;
   const newsLengthHalf = Math.round(newsLength / 2);
+  const isInteger = Number.isInteger(newsLength / 2);
   const evenNews = news.filter((_, idx) => idx % 2 === 0);
   const oddNews = news.filter((_, idx) => idx % 2 !== 0);
 
@@ -64,69 +67,78 @@ export const NewsSlider = () => {
         );
       }}
     >
-      {Array.from({ length: newsLengthHalf }).map((_, idx) => (
-        <div
-          key={idx}
-          className={clsx(
-            "grid grid-cols-2 mb-10 gap-6 transition-all duration-500",
-            idx !== activeSlide ? "opacity-0" : "opacity-100"
-          )}
-        >
-          <div className="flex flex-col gap-4">
-            <div className="flex justify-between ">
-              <h5 className={`${delagothicone.className} text-xl w-4/5 leading-6 h-9`}>
-                {evenNews[idx].title}
-              </h5>
+      {Array.from({ length: newsLengthHalf }).map((_, idx) => {
+        const evennewUrl = translatorToEn(evenNews[idx].title);
+        const oddnewUrl = translatorToEn(oddNews[idx]?.title);
 
-              <span className="text-[#999] text-right text-xs leading-4">
-                {evenNews[idx].date}
-              </span>
-            </div>
-
-            <Image
-              className="flex-1 self-stretch rounded-lg"
-              src={evenNews[idx].img}
-              alt="news"
-            />
-
-            <div className="flex justify-between">
-              <p className="w-[350px] h-8 text-sm leading-4 text-hidden-news">
-                {evenNews[idx].description}
-              </p>
-
-              <Button className="2xl:py-2">Подробнее</Button>
-            </div>
-          </div>
-
-          {idx !== newsLengthHalf - 1 && (
-            <div className="flex flex-col gap-4">
-              <div className="flex justify-between">
-                <h5 className={`${delagothicone.className} w-4/5 text-xl leading-6 h-9`}>
-                  {oddNews[idx].title}
+        return (
+          <div
+            key={idx}
+            className={clsx(
+              "grid grid-cols-2 mb-10 gap-6 transition-all duration-500",
+              idx !== activeSlide ? "opacity-0" : "opacity-100"
+            )}
+          >
+            <Link href={`/news/${evennewUrl}`} className="flex flex-col gap-4">
+              <div className="flex justify-between ">
+                <h5
+                  className={`${delagothicone.className} text-xl w-4/5 leading-6 h-9`}
+                >
+                  {evenNews[idx].title}
                 </h5>
 
                 <span className="text-[#999] text-right text-xs leading-4">
-                  {oddNews[idx].date}
+                  {evenNews[idx].date}
                 </span>
               </div>
 
               <Image
-                className="flex-1 self-stretch rounded-lg"
-                src={oddNews[idx].img}
+                className="h-80 self-stretch rounded-lg"
+                src={evenNews[idx].img}
                 alt="news"
               />
 
               <div className="flex justify-between">
                 <p className="w-[350px] h-8 text-sm leading-4 text-hidden-news">
-                  {oddNews[idx].description}
+                  {evenNews[idx].description}
                 </p>
 
                 <Button className="2xl:py-2">Подробнее</Button>
               </div>
-            </div>
-          )}
-        </div>
-      ))}
+            </Link>
+            {/* isInteger && idx !== newsLengthHalf - 1 && */}
+            {(
+              <Link href={`/news/${oddnewUrl}`} className="flex flex-col gap-4">
+                <div className="flex justify-between">
+                  <h5
+                    className={`${delagothicone.className} w-4/5 text-xl leading-6 h-9`}
+                  >
+                    {oddNews[idx].title}
+                  </h5>
+
+                  <span className="text-[#999] text-right text-xs leading-4">
+                    {oddNews[idx].date}
+                  </span>
+                </div>
+
+                <Image
+                  className="h-80 self-stretch rounded-lg"
+                  src={oddNews[idx].img}
+                  alt="news"
+                />
+
+                <div className="flex justify-between">
+                  <p className="w-[350px] h-8 text-sm leading-4 text-hidden-news">
+                    {oddNews[idx].description}
+                  </p>
+
+                  <Button className="2xl:py-2">Подробнее</Button>
+                </div>
+              </Link>
+            )}
+          </div>
+        );
+      })}
     </Carousel>
   );
 };

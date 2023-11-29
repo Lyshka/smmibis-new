@@ -1,6 +1,8 @@
 import Image, { StaticImageData } from "next/image";
 import { Button } from "../Button/Button";
 import { delagothicone } from "@/assets/font";
+import { useContext } from "react";
+import { MainContext } from "@/context/MainContext";
 
 interface IMainSlide {
   title: string;
@@ -17,6 +19,8 @@ export const MainSlide = ({
   description,
   buttonText,
 }: IMainSlide) => {
+  const { toggleFeedBack } = useContext(MainContext);
+
   return (
     <div className="h-full w-full relative flex justify-center items-center">
       <Image
@@ -52,7 +56,10 @@ export const MainSlide = ({
           </div>
 
           <div className="2xl:flex">
-            <Button className="2xl:w-auto w-full uppercase">
+            <Button
+              onClick={toggleFeedBack}
+              className="2xl:w-auto w-full uppercase"
+            >
               {buttonText}
             </Button>
           </div>

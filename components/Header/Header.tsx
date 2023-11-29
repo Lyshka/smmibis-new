@@ -17,7 +17,7 @@ export const Header = () => {
 
   return (
     <header className="flex 2xl:flex-row flex-col justify-center items-center 2xl:py-4 py-0 border-b-2 border-[#F4F4F4]">
-      <div className="container gap-8">
+      <div className="container">
         <Link
           href={"/"}
           className="w-17 h-16 2xl:p-2 p-0 flex justify-center items-center"
