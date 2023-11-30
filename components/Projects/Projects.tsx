@@ -57,7 +57,7 @@ export const Projects = () => {
   }, [filteredProjects.length]);
 
   return (
-    <section className="flex justify-center items-center">
+    <section id="portfolio" className="flex justify-center items-center">
       <div className="container 2xl:py-[60px] py-6 flex flex-col 2xl:gap-10 gap-4">
         <div className="flex 2xl:flex-row flex-col items-center justify-between w-full gap-4">
           <Title text="Проекты" />

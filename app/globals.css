@@ -4,7 +4,7 @@
 
 @layer base {
   html {
-    @apply text-[#333] leading-6;
+    @apply text-[#333] leading-6 overflow-x-hidden;
   }
 
   .overflow-margin {
@@ -30,8 +30,7 @@
       #111328 79.43%
     );
     background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: transparent
   }
 
   .list-header-li {
@@ -47,11 +46,11 @@
   }
 
   .container {
-    @apply 2xl:max-w-[calc(100%-620px)] w-full flex items-center justify-between 2xl:p-0 p-4;
+    @apply w-full flex items-center justify-between 2xl:p-0 p-4;
   }
 
   .container-footer {
-    @apply 2xl:max-w-[calc(100%-620px)] w-full flex items-end justify-between 2xl:px-0 px-4 2xl:flex-row flex-col;
+    @apply w-full flex items-end justify-between 2xl:px-0 px-4 2xl:flex-row flex-col container;
   }
 
   .shadow-btn-select-project {

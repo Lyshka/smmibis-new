@@ -4,7 +4,7 @@ import { CardAbout } from "./CardAbout";
 
 export const About = () => {
   return (
-    <section className="flex justify-center items-center">
+    <section id="about" className="flex justify-center items-center">
       <div className="container 2xl:py-[104px] py-10 flex flex-col items-start 2xl:gap-[72px] gap-8">
         <div className="flex flex-col gap-8 w-full">
           <p

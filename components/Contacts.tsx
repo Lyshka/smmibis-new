@@ -15,6 +15,7 @@ interface IContacts {
 export const Contacts = ({ dark = true }: IContacts) => {
   return (
     <section
+      id="contacts"
       className={clsx(
         "flex justify-center items-center w-full",
         dark ? "bg-[#171717] text-white" : "bg-white text-[#333]"
@@ -30,7 +31,7 @@ export const Contacts = ({ dark = true }: IContacts) => {
             </h6>
 
             <p className="2xl:text-base text-xs 2xl:leading-6 leading-4">
-              Свяжитесь с нами и получите бесплатную консультацию Вашего бизнеса
+              Свяжитесь с нами и получите бесплатную консультацию вашего бизнеса
               прямо сейчас
             </p>
           </div>
@@ -60,7 +61,7 @@ export const Contacts = ({ dark = true }: IContacts) => {
                 <MailIcon className="2xl:w-6 w-4 2xl:h-6 h-4" />
 
                 <span className="flex-1 2xl:text-base text-sm font-medium 2xl:leading-6 left-4">
-                  Email:
+                  E-mail:
                 </span>
               </div>
 

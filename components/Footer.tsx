@@ -1,9 +1,8 @@
 import Link from "next/link";
-import { FaInstagram, FaViber, FaWhatsapp } from "react-icons/fa";
 
 import { calibry } from "@/assets/font";
-import { TelegramIcon } from "@/assets/img/TelegramIcon";
 import { footerMenuJobs } from "@/constants/menu";
+import { social } from "@/constants/social";
 
 export const Footer = () => {
   return (
@@ -42,43 +41,24 @@ export const Footer = () => {
               <p className="font-medium 2xl:text-right">Социальные сети:</p>
 
               <div className="text-white flex gap-6 items-center">
-                <Link
-                  href={"/"}
-                  className={
-                    "border border-white rounded-full w-8 h-8 flex justify-center items-center group hover:border-main"
-                  }
-                >
-                  <FaInstagram className="group-hover:fill-main" />
-                </Link>
-                <Link
-                  href={"/"}
-                  className={
-                    "border border-white rounded-full w-8 h-8 flex justify-center items-center group hover:border-main"
-                  }
-                >
-                  <TelegramIcon className="group-hover:fill-main" />
-                </Link>
-                <Link
-                  href={"/"}
-                  className={
-                    "border border-white rounded-full w-8 h-8 flex justify-center items-center group hover:border-main"
-                  }
-                >
-                  <FaWhatsapp className="group-hover:fill-main" />
-                </Link>
-                <Link
-                  href={"/"}
-                  className={
-                    "border border-white rounded-full w-8 h-8 flex justify-center items-center group hover:border-main"
-                  }
-                >
-                  <FaViber className="group-hover:fill-main" />
-                </Link>
+                {social.map(({ icon, id, url }) => (
+                  <Link
+                    key={id}
+                    href={url}
+                    target="_blank"
+                    rel="nofollow"
+                    className={
+                      "border border-white rounded-full w-8 h-8 flex justify-center items-center group hover:border-main"
+                    }
+                  >
+                    {icon}
+                  </Link>
+                ))}
               </div>
             </div>
 
             <p className="text-left text-[#BBBBBB] text-sm">
-              © Все права защищены Ибис Маркетинг 2023
+              © Все права защищены Ибис Маркетинг {new Date().getFullYear()}
             </p>
           </div>
         </div>
