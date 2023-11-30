@@ -42,7 +42,7 @@ export const Header = () => {
         <ul className="hidden 2xl:flex items-center gap-10">
           {mainMenu.map(({ title, url, id }) => (
             <li key={id} className="list-header-li hover:text-main uppercase">
-              <Link href={url}>{title}</Link>
+              <Link href={`/${url}`}>{title}</Link>
             </li>
           ))}
         </ul>

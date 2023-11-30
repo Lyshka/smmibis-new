@@ -1,6 +1,6 @@
 import { news } from "@/constants/news";
 import { translatorToEn } from "@/utils/translator";
-import Image from "next/image";
+import Image, {StaticImageData} from "next/image";
 import Link from "next/link";
 
 interface INewsPage {
@@ -15,8 +15,11 @@ export const NewsPage = ({ idNews }: INewsPage) => {
     return newTitle === decoded;
   })[0];
 
-  const { date, description, img, title } = filteredNews;
 
+  const date:string = filteredNews?.date;
+  const description:string = filteredNews?.description;
+  const img:StaticImageData = filteredNews?.img;
+  const title:string = filteredNews?.title;
   const filteredNewsAll = news.filter(({ title }) => {
     const newTitle = translatorToEn(title);
 

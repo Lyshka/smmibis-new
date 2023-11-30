@@ -96,7 +96,7 @@ export const mainMenu = [
   {
     id: 5,
     title: "Новости",
-    url: "/news",
+    url: "news",
   },
   {
     id: 6,

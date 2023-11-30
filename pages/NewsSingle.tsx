@@ -9,7 +9,7 @@ interface INewsSingle {
 }
 
 const NewsSingle = ({ params }: INewsSingle) => {
-  const { idNews } = params;
+  const idNews:string  = params?.idNews;
 
   return (
     <>

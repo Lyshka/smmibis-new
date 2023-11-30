@@ -33,7 +33,8 @@ const imgAdvantage = [
 ];
 
 export const Advantage = ({ advantages }: IAdvantage) => {
-  const { list, title } = advantages;
+  const list:AdvantageList[] = advantages?.list || [];
+  const title:string = advantages?.title;
 
   return (
     <section className="flex flex-col gap-6 2xl:py-0 py-12">

@@ -10,7 +10,7 @@ interface IServiceSingle {
 }
 
 const ServiceSingle = ({ params }: IServiceSingle) => {
-  const { service } = params;
+  const service:string= params?.service;
 
   return (
     <div className="flex flex-col justify-center items-center">
