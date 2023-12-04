@@ -14,7 +14,7 @@ export const DiscountPopup = () => {
 
   useEffect(() => {
     const id = setTimeout(() => {
-      setOpen(false);
+      setOpen(true);
     }, 5000);
 
     return () => clearInterval(id);
