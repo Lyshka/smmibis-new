@@ -5,6 +5,7 @@ import { IoIosArrowDown } from "react-icons/io";
 
 import { priceList } from "./Prices";
 import clsx from "clsx";
+import Link from "next/link";
 
 interface IPriceCard {
   priceCard: priceList;
@@ -89,9 +90,12 @@ export const PriceCard = ({ priceCard, title }: IPriceCard) => {
       </div>
 
       <div className="p-6">
-        <button className="flex py-3 px-6 justify-center items-center rounded-[100px] border-2 border-main text-center text-sm font-extrabold leading-6 w-full">
-          ПОЛУЧИТЬ КП
-        </button>
+        <Link
+          href={"#formService"}
+          className="flex py-3 px-6 justify-center items-center rounded-[100px] border-2 border-main text-center text-sm font-extrabold leading-6 w-full uppercase"
+        >
+          Запросить предложение
+        </Link>
       </div>
     </div>
   );

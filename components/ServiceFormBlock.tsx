@@ -5,7 +5,10 @@ import { ServiceForm } from "./Form/ServiceForm";
 
 export const ServiceFormBlock = () => {
   return (
-    <section className="relative w-full 2xl:h-[264px] overflow-hidden h-full flex justify-center items-center">
+    <section
+      id="formService"
+      className="relative w-full 2xl:h-[264px] overflow-hidden h-full flex justify-center items-center"
+    >
       <div className="absolute h-full w-full">
         <Image
           src={backgroundServidesMail}

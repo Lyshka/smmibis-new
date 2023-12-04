@@ -8,6 +8,8 @@ interface IMainContext {
   toggleMenuHeader?: () => void;
   isOpenFeedBack: boolean;
   toggleFeedBack?: () => void;
+  isOpenGratitude: boolean;
+  toggleGratitude: (state: boolean) => void;
   categoryProjects: Categories;
   onSelect: (title: Categories) => void;
 }
@@ -18,14 +20,17 @@ interface IMainContextProvider {
 
 export const MainContext = createContext<IMainContext>({
   isOpenMenuHeader: false,
+  isOpenGratitude: false,
   categoryProjects: Categories.all,
   onSelect(title) {},
+  toggleGratitude(state) {},
   isOpenFeedBack: false,
 });
 
 export const MainContextProvider = ({ children }: IMainContextProvider) => {
   const [isOpenMenuHeader, setIsOpenMenuHeader] = useState(false);
   const [isOpenFeedBack, setisOpenFeedBack] = useState(false);
+  const [isOpenGratitude, setIsOpenGratitude] = useState(false);
   const [categoryProjects, setCategoryProjects] = useState<Categories>(
     Categories.all
   );
@@ -36,6 +41,10 @@ export const MainContextProvider = ({ children }: IMainContextProvider) => {
 
   const toggleFeedBack = () => {
     setisOpenFeedBack((prv) => !prv);
+  };
+
+  const toggleGratitude = (state: boolean) => {
+    setIsOpenGratitude(state);
   };
 
   const onSelect = (title: Categories) => {
@@ -51,6 +60,8 @@ export const MainContextProvider = ({ children }: IMainContextProvider) => {
         onSelect,
         isOpenFeedBack,
         toggleFeedBack,
+        toggleGratitude,
+        isOpenGratitude,
       }}
     >
       {children}

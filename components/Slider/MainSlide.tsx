@@ -35,7 +35,7 @@ export const MainSlide = ({
         alt="main_slide_1"
         className="2xl:hidden block h-full w-full object-cover"
       />
-      <div className="container absolute">
+      <div className="absolute 2xl:px-0 px-10">
         <div className="2xl:w-[829px] w-full 2xl:p-10 p-6 flex flex-col 2xl:gap-10 gap-8 rounded-2xl bg-black/[.15] backdrop-blur-[12.5px]">
           <div className="flex flex-col 2xl:gap-8 gap-4 text-white">
             <div>

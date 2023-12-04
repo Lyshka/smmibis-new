@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.11.0",
     "@material-tailwind/react": "^2.1.4",
     "clsx": "^2.0.0",
     "cyrillic-to-translit-js": "^3.2.1",

@@ -1,9 +1,10 @@
 import NextTopLoader from "nextjs-toploader";
 import { ReactNode } from "react";
+import Script from "next/script";
 
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header/Header";
-import Script from "next/script";
+import { AlertSuccess } from "@/components/Alert/AlertSuccess";
 
 interface IMainLayout {
   children: ReactNode;
@@ -25,6 +26,7 @@ export const MainLayout = ({ children }: IMainLayout) => {
         `}
       </Script>
       <NextTopLoader />
+      <AlertSuccess />
       <Header />
       <main>{children}</main>
       <Footer />
