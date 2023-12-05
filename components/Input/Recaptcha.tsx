@@ -6,15 +6,10 @@ interface IRecaptcha {
 }
 
 export const Recaptcha = ({ recaptchaRef }: IRecaptcha) => {
-//   function onChange(value) {
-//     console.log("Captcha value:", value);
-//   }
-
   return (
     <ReCAPTCHA
-      size="normal"
+      size="invisible"
       ref={recaptchaRef}
-    //   onChange={onChange}
       sitekey="6LeUhyYpAAAAAIr-5CqLpzF5k25cz4OTsDca-dtm"
       hl="RU"
     />

@@ -5,15 +5,16 @@ import { Input } from "../Input/Input";
 import { useFormMail } from "@/hooks/useFormMail";
 import { MainContext } from "@/context/MainContext";
 import { TelInput } from "../Input/TelInput";
+import { Recaptcha } from "../Input/Recaptcha";
 
 type PopupMainFormType = {} & FormHTMLAttributes<HTMLFormElement>;
 
 export const PopupMainForm = ({ ...props }: PopupMainFormType) => {
   const { toggleDiscount } = useContext(MainContext);
 
-  const { form, sendEmail } = useFormMail({
+  const { form, sendEmail, captcha } = useFormMail({
     template: "template_luykcfl",
-    toggle: toggleDiscount
+    toggle: toggleDiscount,
   });
 
   return (
@@ -32,6 +33,7 @@ export const PopupMainForm = ({ ...props }: PopupMainFormType) => {
           className="2xl:col-span-2"
           name="email"
         />
+        <Recaptcha recaptchaRef={captcha} />
       </div>
 
       <Button className="2xl:py-4 !py-2">Отправить</Button>

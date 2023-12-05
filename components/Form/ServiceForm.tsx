@@ -5,11 +5,12 @@ import { FormHTMLAttributes } from "react";
 import { useFormMail } from "@/hooks/useFormMail";
 import { Button } from "../Button/Button";
 import { Input } from "../Input/Input";
+import { Recaptcha } from "../Input/Recaptcha";
 
 type ServiceFormType = {} & FormHTMLAttributes<HTMLFormElement>;
 
 export const ServiceForm = ({ ...props }: ServiceFormType) => {
-  const { form, sendEmail } = useFormMail({
+  const { form, sendEmail, captcha } = useFormMail({
     template: "template_12l9xwb",
   });
 
@@ -31,6 +32,7 @@ export const ServiceForm = ({ ...props }: ServiceFormType) => {
         type="email"
         name="email"
       />
+      <Recaptcha recaptchaRef={captcha}/>
       <Button className="uppercase 2xl:leading-4 2xl:w-auto w-full">
         отправить
       </Button>
