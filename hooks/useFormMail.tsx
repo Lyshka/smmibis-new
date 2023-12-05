@@ -1,12 +1,13 @@
 import { MainContext } from "@/context/MainContext";
 import emailjs from "@emailjs/browser";
-import { useRef, FormEvent, useEffect, useContext } from "react";
+import { useRef, FormEvent, useContext } from "react";
 
 interface IuseFormMail {
   template: string;
+  toggle?: () => void;
 }
 
-export const useFormMail = ({ template }: IuseFormMail) => {
+export const useFormMail = ({ template, toggle }: IuseFormMail) => {
   const form = useRef<HTMLFormElement>(null);
   const { toggleGratitude, isOpenGratitude } = useContext(MainContext);
 
@@ -15,26 +16,38 @@ export const useFormMail = ({ template }: IuseFormMail) => {
 
     if (!form.current) return;
 
-    emailjs
-      .sendForm("service_qyeuhmr", template, form.current, "dcOlQT0d4xOkMtoc_")
-      .then(
-        () => {
-          toggleGratitude(true);
-          form.current?.reset();
-        },
-        (error) => {
-          console.error(error);
-        }
-      );
-  };
+    // test
+    toggleGratitude(true);
+    form.current?.reset();
+    if (toggle) {
+      toggle();
+    }
 
-  useEffect(() => {
-    const id = setTimeout(() => {
+    setTimeout(() => {
       toggleGratitude(false);
     }, 5000);
 
-    return () => clearTimeout(id);
-  }, [toggleGratitude, isOpenGratitude]);
+    // emailjs
+    //   .sendForm("service_qyeuhmr", template, form.current, "dcOlQT0d4xOkMtoc_")
+    //   .then(
+    //     () => {
+    //       toggleGratitude(true);
+    //       form.current?.reset();
+    //     },
+    //     (error) => {
+    //       console.error(error);
+    //     }
+    //   )
+    //   .finally(() => {
+    //     if (toggle) {
+    //       toggle();
+    //     }
+
+    //     setTimeout(() => {
+    //       toggleGratitude(false);
+    //     }, 5000);
+    //   });
+  };
 
   return { form, sendEmail };
 };

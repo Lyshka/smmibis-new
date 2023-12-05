@@ -4,7 +4,7 @@ import { FormHTMLAttributes } from "react";
 
 import { useFormMail } from "@/hooks/useFormMail";
 import { Button } from "../Button/Button";
-import { Input } from "../Input";
+import { Input } from "../Input/Input";
 
 type ServiceFormType = {} & FormHTMLAttributes<HTMLFormElement>;
 
@@ -28,6 +28,7 @@ export const ServiceForm = ({ ...props }: ServiceFormType) => {
       <Input
         className="2xl:min-w-[307px] min-w-full"
         placeholder="Email *"
+        type="email"
         name="email"
       />
       <Button className="uppercase 2xl:leading-4 2xl:w-auto w-full">

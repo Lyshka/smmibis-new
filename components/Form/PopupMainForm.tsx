@@ -1,14 +1,19 @@
-import { FormHTMLAttributes } from "react";
+import { FormHTMLAttributes, useContext } from "react";
 
 import { Button } from "../Button/Button";
-import { Input } from "../Input";
+import { Input } from "../Input/Input";
 import { useFormMail } from "@/hooks/useFormMail";
+import { MainContext } from "@/context/MainContext";
+import { TelInput } from "../Input/TelInput";
 
 type PopupMainFormType = {} & FormHTMLAttributes<HTMLFormElement>;
 
 export const PopupMainForm = ({ ...props }: PopupMainFormType) => {
+  const { toggleDiscount } = useContext(MainContext);
+
   const { form, sendEmail } = useFormMail({
     template: "template_luykcfl",
+    toggle: toggleDiscount
   });
 
   return (
@@ -19,9 +24,14 @@ export const PopupMainForm = ({ ...props }: PopupMainFormType) => {
       className="flex flex-col flex-1 gap-6"
     >
       <div className="grid 2xl:grid-cols-2 grid-cols-1 2xl:gap-6 gap-4">
-        <Input placeholder="Имя" name="name"/>
-        <Input placeholder="Телефон" name="tel"/>
-        <Input placeholder="Email" className="2xl:col-span-2" name="email"/>
+        <Input placeholder="Имя" name="name" />
+        <TelInput />
+        <Input
+          placeholder="Email"
+          type="email"
+          className="2xl:col-span-2"
+          name="email"
+        />
       </div>
 
       <Button className="2xl:py-4 !py-2">Отправить</Button>

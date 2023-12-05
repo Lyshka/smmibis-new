@@ -1,6 +1,7 @@
 import Image, { StaticImageData } from "next/image";
 import { ServiceSubTitle } from "../Title/ServiceSubTitle";
 import { Button } from "../Button/Button";
+import Link from "next/link";
 
 interface IServiceAbout {
   title: string;
@@ -21,9 +22,11 @@ export const ServiceAbout = ({ img, title }: IServiceAbout) => {
         </div>
 
         <div className="flex 2xl:justify-start justify-center items-center">
-          <Button variant="outlined" className="font-medium">
-            Получить предложение
-          </Button>
+          <Link href={"#formService"}>
+            <Button variant="outlined" className="font-medium">
+              Получить предложение
+            </Button>
+          </Link>
         </div>
       </div>
 

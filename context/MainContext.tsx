@@ -4,14 +4,16 @@ import { Categories } from "@/constants/projects";
 import { ReactNode, createContext, useState } from "react";
 
 interface IMainContext {
-  isOpenMenuHeader: boolean;
-  toggleMenuHeader?: () => void;
-  isOpenFeedBack: boolean;
-  toggleFeedBack?: () => void;
-  isOpenGratitude: boolean;
-  toggleGratitude: (state: boolean) => void;
   categoryProjects: Categories;
+  isOpenMenuHeader: boolean;
+  isOpenGratitude: boolean;
+  isOpenFeedBack: boolean;
+  isOpenDiscount: boolean;
   onSelect: (title: Categories) => void;
+  toggleGratitude: (state: boolean) => void;
+  toggleFeedBack: () => void;
+  toggleDiscount: () => void;
+  toggleMenuHeader?: () => void;
 }
 
 interface IMainContextProvider {
@@ -19,49 +21,59 @@ interface IMainContextProvider {
 }
 
 export const MainContext = createContext<IMainContext>({
+  categoryProjects: Categories.all,
   isOpenMenuHeader: false,
   isOpenGratitude: false,
-  categoryProjects: Categories.all,
+  isOpenFeedBack: false,
+  isOpenDiscount: false,
   onSelect(title) {},
   toggleGratitude(state) {},
-  isOpenFeedBack: false,
+  toggleFeedBack() {},
+  toggleDiscount() {},
 });
 
 export const MainContextProvider = ({ children }: IMainContextProvider) => {
-  const [isOpenMenuHeader, setIsOpenMenuHeader] = useState(false);
-  const [isOpenFeedBack, setisOpenFeedBack] = useState(false);
-  const [isOpenGratitude, setIsOpenGratitude] = useState(false);
   const [categoryProjects, setCategoryProjects] = useState<Categories>(
     Categories.all
   );
+  const [isOpenMenuHeader, setIsOpenMenuHeader] = useState(false);
+  const [isOpenGratitude, setIsOpenGratitude] = useState(false);
+  const [isOpenFeedBack, setisOpenFeedBack] = useState(false);
+  const [isOpenDiscount, setIsOpenDiscount] = useState(false);
 
-  const toggleMenuHeader = () => {
-    setIsOpenMenuHeader((prv) => !prv);
-  };
-
-  const toggleFeedBack = () => {
-    setisOpenFeedBack((prv) => !prv);
+  const onSelect = (title: Categories) => {
+    setCategoryProjects(title);
   };
 
   const toggleGratitude = (state: boolean) => {
     setIsOpenGratitude(state);
   };
 
-  const onSelect = (title: Categories) => {
-    setCategoryProjects(title);
+  const toggleFeedBack = () => {
+    setisOpenFeedBack((prv) => !prv);
+  };
+
+  const toggleMenuHeader = () => {
+    setIsOpenMenuHeader((prv) => !prv);
+  };
+
+  const toggleDiscount = () => {
+    setIsOpenDiscount((prv) => !prv);
   };
 
   return (
     <MainContext.Provider
       value={{
-        isOpenMenuHeader,
-        toggleMenuHeader,
         categoryProjects,
-        onSelect,
-        isOpenFeedBack,
-        toggleFeedBack,
-        toggleGratitude,
+        isOpenMenuHeader,
         isOpenGratitude,
+        isOpenFeedBack,
+        isOpenDiscount,
+        onSelect,
+        toggleGratitude,
+        toggleFeedBack,
+        toggleMenuHeader,
+        toggleDiscount,
       }}
     >
       {children}

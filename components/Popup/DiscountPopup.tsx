@@ -3,26 +3,27 @@
 import { delagothicone } from "@/assets/font";
 import { IoIosClose } from "react-icons/io";
 import { PopupMainForm } from "../Form/PopupMainForm";
-import { useEffect, useState } from "react";
+import { useEffect, useContext } from "react";
+import { MainContext } from "@/context/MainContext";
 
 export const DiscountPopup = () => {
-  const [open, setOpen] = useState(false);
+  const { isOpenDiscount, toggleDiscount } = useContext(MainContext);
 
   const handleClose = () => {
-    setOpen(false);
+    toggleDiscount();
   };
 
   useEffect(() => {
     const id = setTimeout(() => {
-      setOpen(true);
+      toggleDiscount();
     }, 5000);
 
-    return () => clearInterval(id);
+    return () => clearTimeout(id);
   }, []);
 
   return (
     <>
-      {open && (
+      {isOpenDiscount && (
         <section className="h-screen w-full fixed bg-black/50 inset-0 flex justify-center items-center z-[999] 2xl:px-0 px-4">
           <div className="2xl:container rounded-2xl 2xl:p-[104px] p-4 bg-white relative">
             <IoIosClose

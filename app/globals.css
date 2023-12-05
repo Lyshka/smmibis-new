@@ -30,7 +30,7 @@
       #111328 79.43%
     );
     background-clip: text;
-    color: transparent
+    color: transparent;
   }
 
   .list-header-li {
@@ -98,5 +98,9 @@
     overflow: hidden;
     display: -webkit-box;
     text-overflow: ellipsis;
+  }
+
+  .input-tel {
+    @apply  !flex-1 2xl:!py-4 !py-3 !rounded-lg !bg-[#F4F4F4] placeholder:!text-[#A7A7A7] 2xl:!text-sm !text-xs !leading-4 !h-auto !border-none !w-full;
   }
 }
