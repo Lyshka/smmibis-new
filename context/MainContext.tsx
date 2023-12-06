@@ -3,17 +3,24 @@
 import { Categories } from "@/constants/projects";
 import { ReactNode, createContext, useState } from "react";
 
+type ErrorTel = {
+  stateError: boolean;
+  tel?: string;
+};
+
 interface IMainContext {
   categoryProjects: Categories;
   isOpenMenuHeader: boolean;
   isOpenGratitude: boolean;
   isOpenFeedBack: boolean;
   isOpenDiscount: boolean;
+  isErrorTel: ErrorTel;
   onSelect: (title: Categories) => void;
   toggleGratitude: (state: boolean) => void;
   toggleFeedBack: () => void;
   toggleDiscount: () => void;
   toggleMenuHeader?: () => void;
+  toggleErrorTel: ({ stateError, tel }: ErrorTel) => void;
 }
 
 interface IMainContextProvider {
@@ -26,10 +33,12 @@ export const MainContext = createContext<IMainContext>({
   isOpenGratitude: false,
   isOpenFeedBack: false,
   isOpenDiscount: false,
+  isErrorTel: { stateError: false, tel: "" },
   onSelect(title) {},
   toggleGratitude(state) {},
   toggleFeedBack() {},
   toggleDiscount() {},
+  toggleErrorTel({ stateError, tel }) {},
 });
 
 export const MainContextProvider = ({ children }: IMainContextProvider) => {
@@ -40,6 +49,10 @@ export const MainContextProvider = ({ children }: IMainContextProvider) => {
   const [isOpenGratitude, setIsOpenGratitude] = useState(false);
   const [isOpenFeedBack, setisOpenFeedBack] = useState(false);
   const [isOpenDiscount, setIsOpenDiscount] = useState(false);
+  const [isErrorTel, setIsErrorTel] = useState<ErrorTel>({
+    stateError: false,
+    tel: "",
+  });
 
   const onSelect = (title: Categories) => {
     setCategoryProjects(title);
@@ -61,6 +74,14 @@ export const MainContextProvider = ({ children }: IMainContextProvider) => {
     setIsOpenDiscount((prv) => !prv);
   };
 
+  const toggleErrorTel = ({ stateError, tel }: ErrorTel) => {
+    setIsErrorTel((prv) => ({
+      ...prv,
+      stateError,
+      tel,
+    }));
+  };
+
   return (
     <MainContext.Provider
       value={{
@@ -69,11 +90,13 @@ export const MainContextProvider = ({ children }: IMainContextProvider) => {
         isOpenGratitude,
         isOpenFeedBack,
         isOpenDiscount,
+        isErrorTel,
         onSelect,
         toggleGratitude,
         toggleFeedBack,
         toggleMenuHeader,
         toggleDiscount,
+        toggleErrorTel,
       }}
     >
       {children}

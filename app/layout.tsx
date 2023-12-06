@@ -18,9 +18,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <MainContextProvider>
-        <body className={jost.className}>{children}</body>
-      </MainContextProvider>
+        <MainContextProvider>
+          <body className={jost.className}>{children}</body>
+        </MainContextProvider>
     </html>
   );
 }

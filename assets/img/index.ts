@@ -72,6 +72,7 @@ import videoProduction from "./services/video-production.webp";
 import websiteMaintenance from "./services/website-maintenance.webp";
 
 import popUpFeedback from "./other/popUpFeedback.webp"
+import errorPage from "./other/errorPage.webp"
 
 import contact from "./contact.png";
 import backgroundServidesMail from "./backgroundServidesMail.jpeg";
@@ -143,6 +144,7 @@ export {
   videoProduction,
   websiteMaintenance,
   popUpFeedback,
+  errorPage,
   contact,
   backgroundServidesMail,
 };
