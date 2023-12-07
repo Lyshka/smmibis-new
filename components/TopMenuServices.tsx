@@ -18,7 +18,7 @@ export const TopMenuServices = ({ idSevice }: ITopMenuServices) => {
               <li
                 className={clsx(
                   "p-4 flex items-center gap-6 hover:bg-main hover:text-white",
-                  `/${idSevice}` === url ? "bg-main text-white" : "bg-white"
+                  `${idSevice}` === url ? "bg-main text-white" : "bg-white"
                 )}
               >
                 <span className="text-sm leading-4 tracking-[1px] flex-1">
