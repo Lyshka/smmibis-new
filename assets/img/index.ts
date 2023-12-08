@@ -71,8 +71,13 @@ import tiktokPromotion from "./services/tiktok-promotion.webp";
 import videoProduction from "./services/video-production.webp";
 import websiteMaintenance from "./services/website-maintenance.webp";
 
-import popUpFeedback from "./other/popUpFeedback.webp"
-import errorPage from "./other/errorPage.webp"
+import popUpFeedback from "./other/popUpFeedback.webp";
+import errorPage from "./other/errorPage.webp";
+
+import showNewYear from "./newYear/Snow.webp";
+import showNewYearMobile from "./newYear/SnowMobile.webp";
+import cookieMan from "./newYear/cookieMan.webp";
+import gifts from "./newYear/gifts.webp";
 
 import contact from "./contact.png";
 import backgroundServidesMail from "./backgroundServidesMail.jpeg";
@@ -145,6 +150,10 @@ export {
   websiteMaintenance,
   popUpFeedback,
   errorPage,
+  showNewYear,
+  showNewYearMobile,
+  cookieMan,
+  gifts,
   contact,
   backgroundServidesMail,
 };
