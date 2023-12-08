@@ -2,7 +2,13 @@ import { cookieMan, gifts, showNewYear, showNewYearMobile } from "@/assets/img";
 import Image from "next/image";
 import Link from "next/link";
 
-export const NewYearBadge = () => {
+interface INewYearBadge {
+  textBadge: string | undefined;
+}
+
+export const NewYearBadge = ({ textBadge }: INewYearBadge) => {
+  if (!textBadge) return;
+
   return (
     <section className="rounded-lg bg-main p-4 2xl:pb-4 pb-0 flex 2xl:flex-row flex-col 2xl:gap-0 gap-4 justify-between items-center relative">
       <Image
@@ -22,8 +28,7 @@ export const NewYearBadge = () => {
 
         <div className="flex flex-col 2xl:gap-4 gap-2">
           <p className="2xl:text-base text-xs font-semibold 2xl:leading-5 leading-4">
-            Закажи любой тариф по разработке сайта и получи Контекстную рекламу
-            + CEO в подарок
+            {textBadge}
           </p>
 
           <Link href={"#formService"}>

@@ -50,9 +50,10 @@ export const MainSlide = ({
               </h3>
             </div>
 
-            <p className="2xl:text-base text-xs 2xl:leading-4 2xl:tracking-[0.16px] tracking-[0.12px]">
-              {description}
-            </p>
+            <p
+              className="2xl:text-base text-xs 2xl:leading-6 leading-4 2xl:tracking-[0.16px] tracking-[0.12px]"
+              dangerouslySetInnerHTML={{ __html: description }}
+            />
           </div>
 
           <div className="2xl:flex">

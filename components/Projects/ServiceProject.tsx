@@ -4,7 +4,6 @@ import { useContext, useEffect, useState } from "react";
 import { isMobile } from "react-device-detect";
 
 import { Categories, projects } from "@/constants/projects";
-import { Title } from "../Title/Title";
 import { SelectedMenu } from "./SelectedMenu";
 import { Button } from "../Button/Button";
 import { CardProject } from "./CardProject";
