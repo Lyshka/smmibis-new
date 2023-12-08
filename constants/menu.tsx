@@ -78,7 +78,7 @@ export const mainMenu = [
       },
       {
         id: 12,
-        title: "Видео продакшн",
+        title: "Фото и видеосъёмка",
         url: "video-production",
       },
       {

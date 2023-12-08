@@ -26,8 +26,9 @@ export const slidesMain = [
       📱 SMM-продвижение + настройка таргетированной рекламы в подарок;
       `,
     img: banner7,
-    buttonText: "Рассчитать стоимость",
+    buttonText: "Подробнее",
     imgMobile: banner7_mobile,
+    link: "/services/site-creation",
   },
   {
     id: 2,

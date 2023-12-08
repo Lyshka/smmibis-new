@@ -47,7 +47,7 @@ export const MainSlider = () => {
       )}
     >
       {slidesMain.map(
-        ({ description, id, img, imgMobile, title, buttonText }) => (
+        ({ description, id, img, imgMobile, title, buttonText, link }) => (
           <MainSlide
             key={id}
             img={img}
@@ -55,6 +55,7 @@ export const MainSlider = () => {
             title={title}
             buttonText={buttonText}
             description={description}
+            link={link}
           />
         )
       )}

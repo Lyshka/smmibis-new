@@ -3,6 +3,7 @@ import { Button } from "../Button/Button";
 import { delagothicone } from "@/assets/font";
 import { useContext } from "react";
 import { MainContext } from "@/context/MainContext";
+import Link from "next/link";
 
 interface IMainSlide {
   title: string;
@@ -10,6 +11,7 @@ interface IMainSlide {
   buttonText: string;
   img: StaticImageData;
   imgMobile: StaticImageData;
+  link: string | undefined;
 }
 
 export const MainSlide = ({
@@ -18,6 +20,7 @@ export const MainSlide = ({
   title,
   description,
   buttonText,
+  link,
 }: IMainSlide) => {
   const { toggleFeedBack } = useContext(MainContext);
 
@@ -57,12 +60,14 @@ export const MainSlide = ({
           </div>
 
           <div className="2xl:flex">
-            <Button
-              onClick={toggleFeedBack}
-              className="2xl:w-auto w-full uppercase"
-            >
-              {buttonText}
-            </Button>
+            <Link href={link ? link : ""}>
+              <Button
+                onClick={link ? () => {} : toggleFeedBack}
+                className="2xl:w-auto w-full uppercase"
+              >
+                {buttonText}
+              </Button>
+            </Link>
           </div>
         </div>
       </div>

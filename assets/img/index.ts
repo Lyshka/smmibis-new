@@ -45,6 +45,7 @@ import seoMain from "./priceMainPage/seo.webp";
 import smmMain from "./priceMainPage/smm.webp";
 import targetMain from "./priceMainPage/target.webp";
 import webMain from "./priceMainPage/web.webp";
+import video from "./priceMainPage/video.webp";
 
 import project1_smm from "./projects/avansum_smm.webp";
 import project2_smm from "./projects/cold-frog_smm.webp";
@@ -118,6 +119,7 @@ export {
   smmMain,
   targetMain,
   webMain,
+  video,
   project10_site,
   project11_site,
   project12_smm,

@@ -52,6 +52,7 @@ export const services = [
         valuableBYN: "400",
         valuableRUB: "15000",
         month: false,
+        title: "Стандарт",
         description:
           "3 месяца фикс 700 BYN; с 4-ого месяца фикс 500 BYN + бонусы за запросы, которые в ТОП-10",
         includeServices: [
@@ -82,6 +83,7 @@ export const services = [
         valuableBYN: "800",
         valuableRUB: "25000",
         month: false,
+        title: "Премиум",
         description:
           "3 месяца фикс 700 BYN; с 4-ого месяца фикс 500 BYN + бонусы за запросы, которые в ТОП-10",
         includeServices: [
@@ -116,6 +118,7 @@ export const services = [
         valuableBYN: "1500",
         valuableRUB: "45000",
         month: false,
+        title: "Корпоративный сайт",
         includeServices: [
           {
             id: 1,
@@ -144,6 +147,7 @@ export const services = [
         valuableBYN: "2500",
         valuableRUB: "90000",
         month: false,
+        title: "Интернет-магазин",
         includeServices: [
           {
             id: 1,
@@ -209,6 +213,7 @@ export const services = [
         valuableBYN: "400",
         valuableRUB: "15000",
         month: true,
+        title: "Стандарт",
         includeServices: [
           {
             id: 1,
@@ -253,6 +258,7 @@ export const services = [
         valuableBYN: "600",
         valuableRUB: "20000",
         month: true,
+        title: "Премиум",
         includeServices: [
           {
             id: 1,
@@ -297,6 +303,7 @@ export const services = [
         valuableBYN: "18",
         valuableRUB: "500",
         month: false,
+        title: "Разовое",
         includeServices: [
           {
             id: 1,
@@ -372,6 +379,7 @@ export const services = [
         valuableBYN: "250",
         valuableRUB: "7000",
         month: false,
+        title: "Стандарт",
         includeServices: [
           {
             id: 1,
@@ -439,6 +447,7 @@ export const services = [
         valuableBYN: "450",
         valuableRUB: "15000",
         month: false,
+        title: "Стандарт",
         description:
           "3 месяца фикс 700 BYN; с 4-ого месяца фикс 500 BYN + бонусы за запросы, которые в ТОП-10",
         includeServices: [
@@ -518,6 +527,7 @@ export const services = [
       {
         id: 1,
         valuableBYN: "500",
+        title: "Стандарт",
         valuableRUB: "15000",
         month: false,
         includeServices: [
@@ -546,6 +556,7 @@ export const services = [
         valuableBYN: "700",
         valuableRUB: "25000",
         month: false,
+        title: "Премиум",
         includeServices: [
           {
             id: 1,
@@ -603,6 +614,7 @@ export const services = [
         valuableBYN: "250",
         valuableRUB: "7000",
         month: false,
+        title: "Стандарт",
         includeServices: [
           {
             id: 1,
@@ -666,6 +678,7 @@ export const services = [
         valuableBYN: "1100",
         valuableRUB: "30000",
         month: false,
+        title: "Стандарт",
         description:
           "(при сотрудничестве более 6 мес. скидка с 7мес. – 15 %) в мес.",
         includeServices: [
@@ -706,6 +719,7 @@ export const services = [
         valuableBYN: "1800",
         valuableRUB: "50000",
         month: false,
+        title: "Бизнес",
         description:
           "(при сотрудничестве более 6 мес. скидка с 7мес. – 10 %) в мес.",
         includeServices: [
@@ -747,6 +761,7 @@ export const services = [
         valuableBYN: "699",
         valuableRUB: "20000",
         month: false,
+        title: "Production",
         description: "Создание роликов для TikTok по заданию Заказчика",
         includeServices: [
           {
@@ -811,6 +826,7 @@ export const services = [
         valuableBYN: "450",
         valuableRUB: "12000",
         month: false,
+        title: "Стандарт",
         description: `Продвижение на маркетплейсах Wildberries, ЯндексМаркет, OZONи д.р.<br /><br />
 
         Базовая аналитика и упаковка карточек товара для начала продаж:`,
@@ -863,6 +879,7 @@ export const services = [
         valuableBYN: "650",
         valuableRUB: "19000",
         month: false,
+        title: "Премиум",
         description: `Продвижение на маркетплейсах Wildberries, ЯндексМаркет, OZONи д.р.<br /><br />
 
           включает все, что в тарифе «Старт продаж» и дополнительно:`,
@@ -912,6 +929,7 @@ export const services = [
         valuableBYN: "750",
         valuableRUB: "22000",
         month: false,
+        title: "Ультра",
         description: `Продвижение на маркетплейсах Wildberries, ЯндексМаркет, OZONи д.р.<br /><br />
 
         включает все, что в тарифе «Старт продаж» и дополнительно:`,
@@ -974,6 +992,7 @@ export const services = [
         id: 1,
         valuableBYN: "1800",
         valuableRUB: "70000",
+        title: "Брендбук",
         month: false,
         includeServices: [
           {
@@ -987,6 +1006,7 @@ export const services = [
         valuableBYN: "500",
         valuableRUB: "15000",
         month: false,
+        title: "Укороченный брендбук",
         includeServices: [
           {
             id: 1,
@@ -999,6 +1019,7 @@ export const services = [
         valuableBYN: "450",
         valuableRUB: "17000",
         month: false,
+        title: "Бизнес-каталог",
         includeServices: [
           {
             id: 1,
@@ -1011,6 +1032,7 @@ export const services = [
         valuableBYN: "250",
         valuableRUB: "10000",
         month: false,
+        title: "Меню",
         includeServices: [
           {
             id: 1,
@@ -1023,6 +1045,7 @@ export const services = [
         valuableBYN: "150",
         valuableRUB: "5500",
         month: false,
+        title: "Логотип",
         includeServices: [
           {
             id: 1,
@@ -1035,6 +1058,7 @@ export const services = [
         valuableBYN: "50",
         valuableRUB: "2000",
         month: false,
+        title: "Флаер, визитка",
         includeServices: [
           {
             id: 1,
@@ -1077,6 +1101,7 @@ export const services = [
         id: 1,
         valuableBYN: "500",
         month: false,
+        title: "Радио",
         includeServices: [
           {
             id: 1,
@@ -1088,6 +1113,7 @@ export const services = [
         id: 2,
         valuableBYN: "400",
         month: false,
+        title: "Билборд",
         includeServices: [
           {
             id: 1,
@@ -1103,6 +1129,7 @@ export const services = [
         id: 3,
         valuableBYN: "400",
         month: false,
+        title: "Автобусы (полное брендирование)",
         includeServices: [
           {
             id: 1,
@@ -1123,6 +1150,7 @@ export const services = [
         id: 4,
         valuableBYN: "360",
         month: false,
+        title: "Автобусы (задний борт)",
         includeServices: [
           {
             id: 1,
@@ -1143,6 +1171,7 @@ export const services = [
         id: 5,
         valuableBYN: "80",
         month: false,
+        title: "Автобусы",
         includeServices: [
           {
             id: 1,
@@ -1163,6 +1192,7 @@ export const services = [
         id: 6,
         valuableBYN: "80",
         month: false,
+        title: "Печатная реклама",
         includeServices: [
           {
             id: 1,
@@ -1205,6 +1235,7 @@ export const services = [
         id: 1,
         valuableBYN: "90",
         month: false,
+        title: "Эконом",
         includeServices: [
           {
             id: 1,
@@ -1216,6 +1247,7 @@ export const services = [
         id: 2,
         valuableBYN: "500",
         month: false,
+        title: "Стандарт",
         includeServices: [
           {
             id: 1,
@@ -1254,6 +1286,7 @@ export const services = [
         id: 3,
         valuableBYN: "800",
         month: false,
+        title: "Премиум",
         includeServices: [
           {
             id: 1,
@@ -1292,6 +1325,7 @@ export const services = [
         id: 4,
         valuableBYN: "1000",
         month: false,
+        title: "Ультра",
         includeServices: [
           {
             id: 1,
@@ -1331,7 +1365,7 @@ export const services = [
   {
     id: 12,
     url: "video-production",
-    title: "Видео продакшн",
+    title: "Фото и видеосъёмка",
     img: videoProduction,
     advantages: {
       title: "Почему стоит выбрать Видео продакшн?",
@@ -1361,6 +1395,7 @@ export const services = [
         id: 1,
         valuableBYN: "600",
         month: false,
+        title: "Презентация",
         includeServices: [
           {
             id: 1,
@@ -1373,6 +1408,7 @@ export const services = [
         id: 2,
         valuableBYN: "400",
         month: false,
+        title: "Товары",
         includeServices: [
           {
             id: 1,
@@ -1385,6 +1421,7 @@ export const services = [
         id: 3,
         valuableBYN: "300",
         month: false,
+        title: "Анимация",
         includeServices: [
           {
             id: 1,
@@ -1397,6 +1434,7 @@ export const services = [
         id: 4,
         valuableBYN: "80",
         month: false,
+        title: "Реклама",
         includeServices: [
           {
             id: 1,
@@ -1440,6 +1478,7 @@ export const services = [
         valuableBYN: "60",
         valuableRUB: "2500",
         month: false,
+        title: "Заполнение карточки",
         description: "За одну сеть",
         includeServices: [
           {
@@ -1454,6 +1493,7 @@ export const services = [
         valuableRUB: "4000",
         month: false,
         description: "За одну сеть",
+        title: "Отзывы",
         includeServices: [
           {
             id: 1,
@@ -1466,6 +1506,7 @@ export const services = [
         valuableBYN: "300",
         valuableRUB: "12000",
         month: false,
+        title: "Рассылки",
         includeServices: [
           {
             id: 1,
@@ -1478,6 +1519,7 @@ export const services = [
         valuableBYN: "100",
         valuableRUB: "4000",
         month: false,
+        title: "Автоответы",
         includeServices: [
           {
             id: 1,
@@ -1491,6 +1533,7 @@ export const services = [
         valuableRUB: "2500",
         description: "За 3000 знаков бес пробелов",
         month: false,
+        title: "Копирайтинг",
         includeServices: [
           {
             id: 1,
@@ -1504,6 +1547,7 @@ export const services = [
         valuableBYN: "100",
         valuableRUB: "4000",
         month: false,
+        title: "Предпродакш",
         includeServices: [
           {
             id: 1,
@@ -1520,6 +1564,7 @@ export const services = [
         valuableBYN: "300",
         valuableRUB: "12000",
         month: false,
+        title: "Разработка презентации",
         includeServices: [
           {
             id: 1,
@@ -1563,6 +1608,7 @@ export const services = [
         id: 1,
         valuableBYN: "1100",
         valuableRUB: "45000",
+        title: "Стандарт",
         month: false,
         includeServices: [
           {

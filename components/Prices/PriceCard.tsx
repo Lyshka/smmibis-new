@@ -9,12 +9,17 @@ import Link from "next/link";
 
 interface IPriceCard {
   priceCard: priceList;
-  title: string;
 }
 
-export const PriceCard = ({ priceCard, title }: IPriceCard) => {
-  const { includeServices, valuableBYN, valuableRUB, month, description } =
-    priceCard;
+export const PriceCard = ({ priceCard }: IPriceCard) => {
+  const {
+    includeServices,
+    valuableBYN,
+    valuableRUB,
+    month,
+    description,
+    title,
+  } = priceCard;
 
   const [open, setOpen] = useState(false);
 
