@@ -5,7 +5,7 @@ export const ScriptGeneral = () => {
   return (
     <>
       {/* google start */}
-      <Script src="https://www.googletagmanager.com/gtag/js?id=G-JBFF7RBJKL" />
+      <Script async src="https://www.googletagmanager.com/gtag/js?id=G-JBFF7RBJKL" />
       <Script id="google-analytics">
         {`
             window.dataLayer = window.dataLayer || [];
@@ -19,6 +19,7 @@ export const ScriptGeneral = () => {
       </Script>
       {/* google end */}
 
+      {/* yandex start */}
       <Script id="yandex-metric">
         {`
         (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
@@ -45,6 +46,8 @@ export const ScriptGeneral = () => {
           />
         </div>
       </noscript>
+
+      {/* yandex end */}
     </>
   );
 };
