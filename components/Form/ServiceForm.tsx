@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { FormHTMLAttributes } from "react";
 
@@ -16,6 +16,7 @@ export const ServiceForm = ({ ...props }: ServiceFormType) => {
 
   return (
     <form
+      name="serviceForm"
       ref={form}
       onSubmit={sendEmail}
       {...props}
@@ -32,7 +33,7 @@ export const ServiceForm = ({ ...props }: ServiceFormType) => {
         type="email"
         name="email"
       />
-      <Recaptcha recaptchaRef={captcha}/>
+      <Recaptcha recaptchaRef={captcha} />
       <Button className="uppercase 2xl:leading-4 2xl:w-auto w-full">
         отправить
       </Button>
