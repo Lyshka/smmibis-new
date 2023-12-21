@@ -8,5 +8,6 @@ export const translatorToEn = (stringRu: string) => {
   return cyrillicToTranslit
     .transform(stringRu, "-")
     .toLowerCase()
-    .replace("?", "");
+    .replace("?", "")
+    .replace(":", "");
 };
