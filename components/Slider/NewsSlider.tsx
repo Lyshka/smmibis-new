@@ -17,7 +17,6 @@ export const NewsSlider = () => {
 
   const newsLength = news.length;
   const newsLengthHalf = Math.round(newsLength / 2);
-  const isInteger = Number.isInteger(newsLength / 2);
   const evenNews = news.filter((_, idx) => idx % 2 === 0);
   const oddNews = news.filter((_, idx) => idx % 2 !== 0);
 
@@ -100,14 +99,14 @@ export const NewsSlider = () => {
 
               <div className="flex justify-between">
                 <p className="w-[350px] h-8 text-sm leading-4 text-hidden-news">
-                  {evenNews[idx].description}
+                  {evenNews[idx].shortDescription}...
                 </p>
 
                 <Button className="2xl:py-2">Подробнее</Button>
               </div>
             </Link>
-            {/* isInteger && idx !== newsLengthHalf - 1 && */}
-            {(
+            {/*idx !== newsLengthHalf - 1 && */}
+            {idx !== newsLengthHalf - 1 && (
               <Link href={`/news/${oddnewUrl}`} className="flex flex-col gap-4">
                 <div className="flex justify-between">
                   <h5
@@ -129,7 +128,7 @@ export const NewsSlider = () => {
 
                 <div className="flex justify-between">
                   <p className="w-[350px] h-8 text-sm leading-4 text-hidden-news">
-                    {oddNews[idx].description}
+                    {oddNews[idx].shortDescription}...
                   </p>
 
                   <Button className="2xl:py-2">Подробнее</Button>

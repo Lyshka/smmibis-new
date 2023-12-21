@@ -19,7 +19,7 @@ export const MobileNewsSlider = () => {
       prevArrow={({}) => <></>}
       nextArrow={({}) => <></>}
     >
-      {news.map(({ date, description, id, img, title }) => {
+      {news.map(({ date, id, img, title, shortDescription }) => {
         const newUrl = translatorToEn(title);
 
         return (
@@ -49,7 +49,7 @@ export const MobileNewsSlider = () => {
 
             <div className="flex flex-col gap-2">
               <p className="h-8 text-xs leading-4 text-hidden-news">
-                {description}
+                {shortDescription}...
               </p>
 
               <Button className="2xl:py-2">Подробнее</Button>

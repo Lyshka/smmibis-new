@@ -4,6 +4,15 @@ import news3 from "./news/news3.webp";
 import news4 from "./news/news4.webp";
 import news5 from "./news/news5.webp";
 import news6 from "./news/news6.webp";
+import news7 from "./news/news7.webp";
+import news7_1 from "./news/news7_1.webp";
+import news7_2 from "./news/news7_2.webp";
+import news7_3 from "./news/news7_3.webp";
+import news7_4 from "./news/news7_4.webp";
+import news7_5 from "./news/news7_5.webp";
+import news7_6 from "./news/news7_6.webp";
+import news7_7 from "./news/news7_7.webp";
+import news7_8 from "./news/news7_8.webp";
 
 import bgNews from "./bg/bgNews.webp";
 
@@ -98,6 +107,15 @@ export {
   news4,
   news5,
   news6,
+  news7,
+  news7_1,
+  news7_2,
+  news7_3,
+  news7_4,
+  news7_5,
+  news7_6,
+  news7_7,
+  news7_8,
   bgNews,
   banner1,
   banner1_mobile,
