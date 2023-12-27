@@ -20,7 +20,9 @@ export const services = [
     id: 1,
     url: "site-creation",
     title: "Разработка сайта",
+    description: "Создание сайтов любой сложности от лэндинга до интернет магазина. Креативный дизайн, продающая структура, удобный функционал. Полный цикл от макета до хостинга.",
     img: siteCreation,
+    alt: "Создание сайтов",
     advantages: {
       title: "Преимущества наших сайтов",
       list: [
@@ -181,7 +183,9 @@ export const services = [
     id: 2,
     url: "website-maintenance",
     title: "Обслуживание сайта",
+    description: "Наполнение контентом сайта, устранение ошибок, добавление новых страниц,  редизайн,   разработка калькуляторов, форм обратной связи, привязка к складским программам.",
     img: websiteMaintenance,
+    alt: "Обслуживание сайтов",
     advantages: {
       title: "Преимущества наших сайтов",
       list: [
@@ -349,7 +353,9 @@ export const services = [
     id: 3,
     url: "contextual-advertising",
     title: "Контекстная реклама",
+    description: "Настройка контекстной рекламы Могилеве и Беларуси, на поиске Яндекс,Google, банерная реклама, реклама e-mail, You tube. Помощь в пополнении рекламных аккаунтов.",
     img: contextualAdvertising,
+    alt: "Настройка контекстной рекламы",
     advantages: {
       title: "Почему стоит заказать контекстную рекламу?",
       list: [
@@ -417,7 +423,9 @@ export const services = [
     id: 4,
     url: "seo-promotion",
     title: "SEO продвижение",
+    description: "Полный комплекс продвижения сайтов по ключевым запросам в поисковиках Яндекс, Google. Поднимем ваш сайт в вверх в поисковой выдаче.",
     img: seoPromotion,
+    alt: "SEO продвижение сайтов под ключ",
     advantages: {
       title: "Почему стоит заказать SEO продвижение?",
       list: [
@@ -497,7 +505,9 @@ export const services = [
     id: 5,
     url: "smm-promotion",
     title: "SMM продвижение",
+    description: "Полный комплекс SMM продвижения любых товаров и услуг, запуск продаж, повышение продаж, охватов. Настроем FB pixel, статистику. Снимем контент, напишем посты.",
     img: smmPromotion,
+    alt: "SMM продвижение бизнеса",
     advantages: {
       title: "Почему стоит заказать SMM - продвижение?",
       list: [
@@ -584,7 +594,9 @@ export const services = [
     id: 6,
     url: "targeted-advertising",
     title: "Таргетированная реклама",
+    description: "Полный комплекс продвижения сайтов по ключевым запросам в поисковиках Яндекс, Google. Поднимем ваш сайт в вверх в поисковой выдаче.",
     img: targetedAdvertising,
+    alt: "Таргетированная реклама",
     advantages: {
       title: "Почему стоит заказать таргетированную рекламу?",
       list: [
@@ -648,7 +660,9 @@ export const services = [
     id: 7,
     url: "tiktok-promotion",
     title: "TikTok продвижение",
+    description: "Полный комплекс продвижения любых товаров и услуг в Tik Tok, запуск продаж, повышение продаж, охватов. Настроем рекламу в Tik Tok. Снимем контент – ролики, напишем посты. Бесплатные и платные методы продвижения.",
     img: tiktokPromotion,
+    alt: "съемка Tik Tok роликов",
     advantages: {
       title: "Почему стоит выбрать продвижение в TikTok?",
       list: [
@@ -796,7 +810,9 @@ export const services = [
     id: 8,
     url: "promotion-on-marketplaces",
     title: "Продвижение на маркетплейсах",
+    description: "Полный комплекс продвижения любых товаров на маркетеплейсах Wildberries OZON. Созадание карточек, SEO карточек.  Фото товаров. Описание. Реклама на маркетплейсах.",
     img: promotionOnMarketplaces,
+    alt: "продвижение на Wildberries OZON",
     advantages: {
       title: "Почему стоит выбрать продвижение на маркетплейсах?",
       list: [
@@ -963,7 +979,9 @@ export const services = [
     id: 9,
     url: "development-of-a-unique-design",
     title: "Разработка уникального дизайна",
+    description: "Разработаем уникальный дизайн для сайта, баннеров, социальных сетей, постов, презентаций. Webdesign. Дизайн  флаеров, меню, каталогов, видео, визиток, флаеров.",
     img: developmentOfAUniqueDesign,
+    alt: "разработка уникального дизайна",
     advantages: {
       title: "Почему стоит выбрать разработку уникального веб-дизайна?",
       list: [
@@ -1072,7 +1090,9 @@ export const services = [
     id: 10,
     url: "outdoor-advertising",
     title: "Наружная реклама",
+    description: "Любые виды наружной рекламы – билборды, радио, реклама на автобусах, LED экраны, листовки, раздача листовок, разнос по подъездам.",
     img: outdoorAdvertising,
+    alt: "Наружная реклама в Могилеве",
     advantages: {
       title: "Почему стоит выбрать наружную рекламу?",
       list: [
@@ -1206,7 +1226,9 @@ export const services = [
     id: 11,
     url: "booking-service",
     title: "Booking service",
+    description: "Блок для сайта, Instagram, vk и др социальных сетей для бронирования гостиничных номеров онлайн. Синхронизация с Ostrovok.",
     img: bookingService,
+    alt: "Сервис для бронирования гостиниц",
     advantages: {
       title: "Почему стоит выбрать Booking service?",
       list: [
@@ -1366,7 +1388,9 @@ export const services = [
     id: 12,
     url: "video-production",
     title: "Фото и видеосъёмка",
+    description: "Снимем видеоролик продающий ваши услуги и товары. Отснимем ваши товары для маркетплейсов, сайтов, социальных сетей, каталогов.",
     img: videoProduction,
+    alt: "Фото и видеосъемка для бизнеса",
     advantages: {
       title: "Почему стоит выбрать Видео продакшн?",
       list: [
@@ -1448,7 +1472,9 @@ export const services = [
     id: 13,
     url: "other-services",
     title: "Прочие услуги",
+    description: "Создание презентаций, .e-mail рассылки, копирайтинг, написание статьей для сайтов. Работа с отзывами, автоответы.",
     img: otherServices,
+    alt: "маркетинговые услуги",
     advantages: {
       title: "Почему стоит выбрать Прочие услуги?",
       list: [
@@ -1576,10 +1602,12 @@ export const services = [
     ],
   },
   {
-    id: 13,
+    id: 14,
     url: "functional-marketing-department",
     title: "Функциональный отдел маркетинга",
+    description: "Заменим полноценный отдел маркетинга всего по стоимости одной заработной платы. Вывдем продажи товаров / услуг  на новый уровень.",
     img: functionalMarketingDepartment,
+    alt: "отдел маркетинга на аутсросинге",
     advantages: {
       title: "Почему стоит выбрать Функциональный отдел маркетинга?",
       list: [

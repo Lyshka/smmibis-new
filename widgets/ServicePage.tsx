@@ -18,12 +18,13 @@ export const ServicePage = ({ idSevice }: IServicePage) => {
   const title = service?.title;
   const cards = service?.cards;
   const textBadge = service?.textBadge;
+  const alt = service?.alt;
 
   return (
     <div className="flex flex-col 2xl:gap-[104px] gap-0 2xl:p-10 py-0">
       <ServiceTitle title={title} />
-      <NewYearBadge textBadge={textBadge}/>
-      <ServiceAbout title={title} img={img} />
+      <NewYearBadge textBadge={textBadge} />
+      <ServiceAbout title={title} img={img} alt={alt} />
       <Advantage advantages={advantages} />
       <ServiceProject />
       <Prices pricesCards={cards} />

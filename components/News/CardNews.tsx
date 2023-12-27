@@ -7,12 +7,13 @@ interface ICardNews {
     title: string;
     date: string;
     description: string;
+    shortDescription: string;
     img: StaticImageData;
   };
 }
 
 export const CardNews = ({ news }: ICardNews) => {
-  const { date, description, img, title } = news;
+  const { date, shortDescription, img, title } = news;
 
   return (
     <div className="flex flex-col">
@@ -37,7 +38,7 @@ export const CardNews = ({ news }: ICardNews) => {
           </h2>
 
           <p className="text-hidden-news 2xl:text-sm text-[10px] 2xl:leading-6 leading-4">
-            {description}
+            {shortDescription}
           </p>
         </div>
 

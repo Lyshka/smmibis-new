@@ -2,18 +2,19 @@ import Image, { StaticImageData } from "next/image";
 import { delagothicone } from "@/assets/font";
 
 interface ICardPrice {
-  title: string;
-  description: string;
-  img: StaticImageData;
-  newPrice: boolean | undefined;
+  price: {
+    id: number;
+    title: string;
+    description: string;
+    img: StaticImageData;
+    newPrice?: boolean;
+    alt: string;
+  };
 }
 
-export const CardPrice = ({
-  title,
-  description,
-  img,
-  newPrice,
-}: ICardPrice) => {
+export const CardPrice = ({ price }: ICardPrice) => {
+  const { alt, description, img, newPrice, title } = price;
+
   return (
     <div className="border-b border-[#BBBBBB] 2xl:py-6 py-2 flex 2xl:flex-row flex-col 2xl:justify-between justify-center 2xl:gap-10 gap-4 w-full">
       <h4
@@ -30,7 +31,7 @@ export const CardPrice = ({
         <div className="relative">
           <Image
             src={img}
-            alt="priceList"
+            alt={alt}
             width={417}
             height={168}
             className="2xl:block hidden rounded-lg object-cover"
@@ -38,7 +39,7 @@ export const CardPrice = ({
 
           <Image
             src={img}
-            alt="priceList"
+            alt={alt}
             height={168}
             className="2xl:hidden block rounded-lg object-cover w-full"
           />
