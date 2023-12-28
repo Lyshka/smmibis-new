@@ -13,6 +13,15 @@ import news7_5 from "./news/news7_5.webp";
 import news7_6 from "./news/news7_6.webp";
 import news7_7 from "./news/news7_7.webp";
 import news7_8 from "./news/news7_8.webp";
+import news8 from "./news/news8.webp";
+import news8_1 from "./news/news8_1.webp";
+import news8_2 from "./news/news8_2.webp";
+import news8_3 from "./news/news8_3.webp";
+import news8_4 from "./news/news8_4.webp";
+import news8_5 from "./news/news8_5.webp";
+import news8_6 from "./news/news8_6.webp";
+import news8_7 from "./news/news8_7.webp";
+import news8_8 from "./news/news8_8.webp";
 
 import bgNews from "./bg/bgNews.webp";
 
@@ -116,6 +125,15 @@ export {
   news7_6,
   news7_7,
   news7_8,
+  news8_1,
+  news8_2,
+  news8_3,
+  news8_4,
+  news8_5,
+  news8_6,
+  news8_7,
+  news8_8,
+  news8,
   bgNews,
   banner1,
   banner1_mobile,

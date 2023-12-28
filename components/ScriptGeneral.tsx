@@ -37,18 +37,6 @@ export const ScriptGeneral = () => {
       `}
       </Script>
 
-      <noscript>
-        <div>
-          <Image
-            src="https://mc.yandex.ru/watch/95788534"
-            style={{ position: "absolute", left: "-9999px" }}
-            alt=""
-            width={1}
-            height={1}
-          />
-        </div>
-      </noscript>
-
       {/* yandex end */}
     </>
   );
