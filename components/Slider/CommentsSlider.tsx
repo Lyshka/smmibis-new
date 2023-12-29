@@ -49,7 +49,9 @@ export const CommentsSlider = () => {
             </p>
 
             <div className="">
-              <p className="text-center 2xl:text-lg text-base font-bold leading-6">{name}</p>
+              <p className="text-center 2xl:text-lg text-base font-bold leading-6">
+                {name}
+              </p>
               <p className="text-center 2xl:text-base text-sm font-medium leading-4 text-[#BBBBBB]">
                 {role}
               </p>
@@ -61,7 +63,10 @@ export const CommentsSlider = () => {
       <div className="flex items-center gap-4">
         {comments.map(({ img, id }, idx) => (
           <Image
-            className={clsx(isSlideNumber !== idx && "opacity-50")}
+            className={clsx(
+              "border rounded-full",
+              isSlideNumber !== idx && "opacity-50"
+            )}
             width={48}
             height={48}
             key={id}
