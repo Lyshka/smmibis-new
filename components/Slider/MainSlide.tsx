@@ -11,7 +11,7 @@ interface IMainSlide {
   buttonText: string;
   img: StaticImageData;
   imgMobile: StaticImageData;
-  link: string | undefined;
+  link?: string | undefined;
 }
 
 export const MainSlide = ({
