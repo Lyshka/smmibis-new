@@ -75,7 +75,7 @@ export const ServiceProject = ({ idSevice }: IServiceProject) => {
       </div>
 
       <div className="flex justify-center items-center">
-        <div className="2xl:grid flex 2xl:grid-cols-3 2xl:gap-6 gap-4 justify-start items-start p-4 2xl:overflow-visible overflow-y-scroll">
+        <div className="2xl:grid flex 2xl:grid-cols-3 2xl:gap-6 gap-4 justify-start items-start 2xl:overflow-visible overflow-y-scroll">
           {projectsSmm.slice(0, projectInfo.length).map(({ id, img }) => (
             <CardProject key={id} img={img} />
           ))}
