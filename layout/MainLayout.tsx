@@ -1,6 +1,7 @@
 import NextTopLoader from "nextjs-toploader";
 import { ReactNode } from "react";
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import { Analytics } from '@vercel/analytics/react';
 
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header/Header";
@@ -15,6 +16,7 @@ export const MainLayout = ({ children }: IMainLayout) => {
   return (
     <div className="min-h-screen max-w-full">
       <SpeedInsights />
+      <Analytics />
       <NextTopLoader />
       <ScriptGeneral />
       <AlertSuccess />
