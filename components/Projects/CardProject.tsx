@@ -16,7 +16,7 @@ export const CardProject = ({ img }: ICardProject) => {
   };
 
   return (
-    <>
+    <div className="shadow-2xl 2xl:block contents">
       <Image
         className="2xl:block hidden cursor-pointer"
         width={417}
@@ -35,6 +35,6 @@ export const CardProject = ({ img }: ICardProject) => {
       />
 
       {open && <ImgZoomPopup onOpen={onOpen} img={img} />}
-    </>
+    </div>
   );
 };

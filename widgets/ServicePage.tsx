@@ -26,7 +26,7 @@ export const ServicePage = ({ idSevice }: IServicePage) => {
       {/* <NewYearBadge textBadge={textBadge} /> */}
       <ServiceAbout title={title} img={img} alt={alt} />
       <Advantage advantages={advantages} />
-      <ServiceProject />
+      <ServiceProject idSevice={idSevice}/>
       <Prices pricesCards={cards} />
     </div>
   );
