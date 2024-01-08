@@ -19,7 +19,7 @@ export const ServiceFormBlock = () => {
           src={backgroundServidesMail}
           alt="ServidesMail"
           height={264}
-          className="w-full object-cover 2xl:block hidden"
+          className="w-full object-cover h-[264px] 2xl:block hidden"
         />
         <div className="h-full bg-black/50 z-10 w-full absolute top-0">
           &nbsp;

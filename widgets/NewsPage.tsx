@@ -65,7 +65,7 @@ export const NewsPage = ({ idNews }: INewsPage) => {
           </div>
 
           <div className="flex flex-col gap-4 2xl:w-[360px] w-full">
-            {filteredNewsAll.map(({ date, img, title, id }) => {
+            {filteredNewsAll.slice(0,5).map(({ date, img, title, id }) => {
               const newUrl = translatorToEn(title);
 
               return (

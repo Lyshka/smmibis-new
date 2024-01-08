@@ -1,5 +1,5 @@
-import { Contacts } from "@/components/Contacts";
 import { NewsAbout } from "@/components/News/NewsAbout";
+import { ServiceFormBlock } from "@/components/ServiceFormBlock";
 import { NewsPage } from "@/widgets/NewsPage";
 
 interface INewsSingle {
@@ -15,7 +15,7 @@ const NewsSingle = ({ params }: INewsSingle) => {
     <>
       <NewsAbout />
       <NewsPage idNews={idNews} />
-      <Contacts dark={false} />
+      <ServiceFormBlock />
     </>
   );
 };

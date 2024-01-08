@@ -22,6 +22,7 @@ import news8_5 from "./news/news8_5.webp";
 import news8_6 from "./news/news8_6.webp";
 import news8_7 from "./news/news8_7.webp";
 import news8_8 from "./news/news8_8.webp";
+import news9 from "./news/news9.webp";
 
 import bgNews from "./bg/bgNews.webp";
 
@@ -128,6 +129,7 @@ export {
   news8_7,
   news8_8,
   news8,
+  news9,
   bgNews,
   banner2,
   banner2_mobile,
