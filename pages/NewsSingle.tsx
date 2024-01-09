@@ -17,7 +17,7 @@ const NewsSingle = ({ params }: INewsSingle) => {
       <NewsAbout />
       <NewsPage idNews={idNews} />
       <ServiceFormBlock />
-      <Contacts />
+      <Contacts dark={false}/>
     </>
   );
 };
