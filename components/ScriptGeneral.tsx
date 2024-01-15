@@ -1,11 +1,13 @@
-import Image from "next/image";
 import Script from "next/script";
 
 export const ScriptGeneral = () => {
   return (
     <>
       {/* google start */}
-      <Script async src="https://www.googletagmanager.com/gtag/js?id=G-JBFF7RBJKL" />
+      <Script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-JBFF7RBJKL"
+      />
       <Script id="google-analytics">
         {`
             window.dataLayer = window.dataLayer || [];
@@ -36,8 +38,19 @@ export const ScriptGeneral = () => {
         });
       `}
       </Script>
-
       {/* yandex end */}
+
+      {/* google start */}
+      <Script id="google-analytics-2">
+        {`
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-N98X9TZ');
+        `}
+      </Script>
+      {/* google end */}
     </>
   );
 };
