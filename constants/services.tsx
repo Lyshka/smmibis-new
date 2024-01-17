@@ -53,8 +53,6 @@ export const services = [
         valuableRUB: "15000",
         month: false,
         title: "Стандарт",
-        description:
-          "3 месяца фикс 700 BYN; с 4-ого месяца фикс 500 BYN + бонусы за запросы, которые в ТОП-10",
         includeServices: [
           {
             id: 1,
@@ -84,8 +82,6 @@ export const services = [
         valuableRUB: "25000",
         month: false,
         title: "Премиум",
-        description:
-          "3 месяца фикс 700 BYN; с 4-ого месяца фикс 500 BYN + бонусы за запросы, которые в ТОП-10",
         includeServices: [
           {
             id: 1,
