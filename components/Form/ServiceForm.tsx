@@ -27,10 +27,11 @@ export const ServiceForm = ({ ...props }: ServiceFormType) => {
         placeholder="Имя *"
         name="name"
       />
+
       <Input
         className="2xl:min-w-[307px] min-w-full"
-        placeholder="Email *"
-        type="email"
+        placeholder="+375"
+        type="tel"
         name="email"
       />
       <Recaptcha recaptchaRef={captcha} />

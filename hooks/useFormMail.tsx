@@ -109,8 +109,9 @@ export const useFormMail = ({ template, toggle }: IuseFormMail) => {
                 "https://api.telegram.org/bot6597877649:AAEfIM7h9IYg7m688vgZ_WcCnb7R2QdguMg/sendMessage",
                 {
                   chat_id: -4054386788,
-                  text: `<b>Клиент: </b>${name.value}
-<b>Email: </b>${email.value}`,
+                  text: `
+<b>Клиент: </b>${name.value}
+<b>Телефон: </b>${email.value}`,
                   parse_mode: "html",
                 }
               );
