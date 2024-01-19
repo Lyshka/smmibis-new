@@ -51,6 +51,14 @@ export const ScriptGeneral = () => {
         `}
       </Script>
       {/* google end */}
+
+      {/* conversion start */}
+      <Script id="conversion">
+        {`
+              gtag('event', 'conversion', {'send_to': 'AW-10818875356/BHWMCPXAn84YENzf66Yo'});
+        `}
+      </Script>
+      {/* conversion end */}
     </>
   );
 };
