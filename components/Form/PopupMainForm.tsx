@@ -27,12 +27,6 @@ export const PopupMainForm = ({ ...props }: PopupMainFormType) => {
       <div className="grid 2xl:grid-cols-2 grid-cols-1 2xl:gap-6 gap-4">
         <Input placeholder="Имя" name="name" />
         <TelInput />
-        <Input
-          placeholder="Email"
-          type="email"
-          className="2xl:col-span-2"
-          name="email"
-        />
         <Recaptcha recaptchaRef={captcha} />
       </div>
 

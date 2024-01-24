@@ -28,7 +28,6 @@ export const useFormMail = ({ template, toggle }: IuseFormMail) => {
     const formNameService =
       form.current.attributes.getNamedItem("name")?.nodeValue;
     const name: any = form.current?.elements.namedItem("name");
-    const email: any = form.current?.elements.namedItem("email");
     const tel: any = form.current?.elements.namedItem("tel");
 
     // test
@@ -98,7 +97,6 @@ export const useFormMail = ({ template, toggle }: IuseFormMail) => {
                 {
                   chat_id: -4054386788,
                   text: `<b>Клиент: </b>${name.value}
-<b>Email: </b>${email.value}
 <b>Телефон: </b> ${tel.value}
                             `,
                   parse_mode: "html",
@@ -111,7 +109,7 @@ export const useFormMail = ({ template, toggle }: IuseFormMail) => {
                   chat_id: -4054386788,
                   text: `
 <b>Клиент: </b>${name.value}
-<b>Телефон: </b>${email.value}`,
+<b>Телефон: </b> ${tel.value}`,
                   parse_mode: "html",
                 }
               );

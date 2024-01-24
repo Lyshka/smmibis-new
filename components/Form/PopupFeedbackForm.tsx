@@ -36,7 +36,6 @@ export const PopupFeedbackForm = () => {
         <div className="flex flex-col gap-4">
           <Input placeholder="Имя" name="name" />
           <TelInput />
-          <Input placeholder="Email" type="email" name="email" />
           <Recaptcha recaptchaRef={captcha} />
         </div>
 

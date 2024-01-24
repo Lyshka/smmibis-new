@@ -33,7 +33,7 @@ export const ServiceForm = ({ ...props }: ServiceFormType) => {
         className="2xl:min-w-[307px] min-w-full"
         placeholder="+375"
         type="tel"
-        name="email"
+        name="tel"
         required
       />
       <Recaptcha recaptchaRef={captcha} />
