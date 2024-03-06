@@ -11,9 +11,19 @@ import {
   colabKedrBor,
   colabLiftMash,
   colabJetour,
+  colabSolution,
+  colabTortbox,
 } from "@/assets/img";
 
 export const colobaration = [
+  {
+    id: 13,
+    img: colabTortbox,
+  },
+  {
+    id: 14,
+    img: colabSolution,
+  },
   {
     id: 1,
     img: colabKia,
