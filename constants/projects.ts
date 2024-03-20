@@ -16,6 +16,8 @@ import {
   project7_smm,
   project8_smm,
   project9_site,
+  project18_smm,
+  project19_site,
 } from "@/assets/img";
 
 export enum Categories {
@@ -128,6 +130,16 @@ export const projects = [
   {
     id: 17,
     img: project9_site,
+    category: Categories.sites,
+  },
+  {
+    id: 18,
+    img: project18_smm,
+    category: Categories.smm,
+  },
+  {
+    id: 19,
+    img: project19_site,
     category: Categories.sites,
   },
 ];

@@ -85,6 +85,8 @@ import project14_smm from "./projects/royal-park_smm.webp";
 import project15_smm from "./projects/star-food_smm.webp";
 import project16_site from "./projects/t1_site.webp";
 import project17_smm from "./projects/t1_smm.webp";
+import project18_smm from "./projects/remby_smm.webp";
+import project19_site from "./projects/tortbox_site.webp";
 
 import bookingService from "./services/booking-service.webp";
 import contextualAdvertising from "./services/contextual-advertising.webp";
@@ -158,14 +160,6 @@ export {
   targetMain,
   webMain,
   video,
-  project10_site,
-  project11_site,
-  project12_smm,
-  project13_site,
-  project14_smm,
-  project15_smm,
-  project16_site,
-  project17_smm,
   project1_smm,
   project2_smm,
   project3_site,
@@ -175,6 +169,16 @@ export {
   project7_smm,
   project8_smm,
   project9_site,
+  project10_site,
+  project11_site,
+  project12_smm,
+  project13_site,
+  project14_smm,
+  project15_smm,
+  project16_site,
+  project17_smm,
+  project18_smm,
+  project19_site,
   colabAvansum,
   colabDsk,
   colabJac,
