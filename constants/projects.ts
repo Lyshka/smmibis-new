@@ -138,7 +138,7 @@ export const projects = [
     category: Categories.smm,
   },
   {
-    id: 19,
+    id: 19,  
     img: project19_site,
     category: Categories.sites,
   },
