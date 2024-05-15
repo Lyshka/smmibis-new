@@ -3,6 +3,7 @@ import { Coloboration } from "@/components/Coloboration";
 import { Comments } from "@/components/Comments";
 import { Contacts } from "@/components/Contacts";
 import { News } from "@/components/News/News";
+import { Packages } from "@/components/Packages/Packages";
 import { DiscountPopup } from "@/components/Popup/DiscountPopup";
 import { FeedbackPopup } from "@/components/Popup/FeedbackPopup";
 import { Price } from "@/components/Price/Price";
@@ -15,6 +16,7 @@ export default function Home() {
       <MainSlider />
       <About />
       <Price />
+      <Packages />
       <Projects />
       <Coloboration />
       <Comments />
