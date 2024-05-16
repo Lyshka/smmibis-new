@@ -87,6 +87,7 @@ import project16_site from "./projects/t1_site.webp";
 import project17_smm from "./projects/t1_smm.webp";
 import project18_smm from "./projects/remby_smm.webp";
 import project19_site from "./projects/tortbox_site.webp";
+import project20_site from "./projects/lider-plast_site.webp";
 
 import bookingService from "./services/booking-service.webp";
 import contextualAdvertising from "./services/contextual-advertising.webp";
@@ -179,6 +180,7 @@ export {
   project17_smm,
   project18_smm,
   project19_site,
+  project20_site,
   colabAvansum,
   colabDsk,
   colabJac,
