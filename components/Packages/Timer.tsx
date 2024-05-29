@@ -12,7 +12,11 @@ interface ITimer {
 export const Timer = () => {
   const [isServer, setIsServer] = useState(false);
   const currentDate = new Date();
-  const [targetDate, setTargetDate] = useState(new Date("2024-05-25"));
+  const [targetDate, setTargetDate] = useState(() => {
+    const date = new Date();
+    date.setDate(date.getDate() + 5);
+    return date;
+  });
 
   const calculateTimeLeft = (): ITimer => {
     const difference = +targetDate - +new Date();
@@ -49,7 +53,7 @@ export const Timer = () => {
     setIsServer(true);
   }, []);
 
-  if(!isServer) return;
+  if (!isServer) return;
 
   return (
     <div className="flex flex-col items-center xl:gap-[50px] gap-[30px]">
