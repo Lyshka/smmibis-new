@@ -12,6 +12,7 @@ interface IMainSlide {
   img: StaticImageData;
   imgMobile: StaticImageData;
   link?: string | undefined;
+  textPrice?: string | undefined;
 }
 
 export const MainSlide = ({
@@ -21,6 +22,7 @@ export const MainSlide = ({
   description,
   buttonText,
   link,
+  textPrice,
 }: IMainSlide) => {
   const { toggleFeedBack } = useContext(MainContext);
 
@@ -47,16 +49,22 @@ export const MainSlide = ({
               </p>
 
               <h3
+                dangerouslySetInnerHTML={{ __html: title }}
                 className={`2xl:text-[50px] text-[26px] 2xl:leading-[58px] leading-8 ${delagothicone.className}`}
-              >
-                {title}
-              </h3>
+              />
             </div>
 
             <p
               className="2xl:text-base text-xs 2xl:leading-6 leading-4 2xl:tracking-[0.16px] tracking-[0.12px]"
               dangerouslySetInnerHTML={{ __html: description }}
             />
+
+            {textPrice && (
+              <div
+                className="xl:space-y-[17.5px] space-y-5"
+                dangerouslySetInnerHTML={{ __html: textPrice }}
+              />
+            )}
           </div>
 
           <div className="2xl:flex">

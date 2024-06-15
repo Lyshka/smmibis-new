@@ -19,6 +19,10 @@ export const Projects = () => {
     active: false,
   });
 
+  const onDownloadPortfolio = () => {
+    window.location.href = `/portf.pptx`;
+  };
+
   const onShowFullPost = () => {
     if (projectInfo.active) {
       return setProjectInfo((prv) => ({
@@ -75,11 +79,15 @@ export const Projects = () => {
           </div>
         </div>
 
-        {filteredProjects.length > 6 && (
-          <Button onClick={onShowFullPost} className="2xl:block hidden">
-            {projectInfo.active ? "Свернуть" : "Смотреть все проекты"}
-          </Button>
-        )}
+        <div className="flex xl:gap-6 gap-5 xl:flex-row flex-col">
+          {filteredProjects.length > 6 && (
+            <Button onClick={onShowFullPost} className="2xl:block hidden">
+              {projectInfo.active ? "Свернуть" : "Смотреть все проекты"}
+            </Button>
+          )}
+
+          <Button onClick={onDownloadPortfolio}>Скачать портфолио</Button>
+        </div>
       </div>
     </section>
   );

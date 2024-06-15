@@ -47,8 +47,14 @@ import comment3 from "./comment/comment3.webp";
 import comment4 from "./comment/comment4.webp";
 import comment5 from "./comment/comment5.webp";
 
-import banner6 from "./MainSlide/banner6.webp";
-import banner6_mobile from "./MainSlide/banner6_mobile.webp";
+import banner1 from "./MainSlide/banner1.webp";
+import banner1_mobile from "./MainSlide/banner1_mobile.webp";
+import banner2 from "./MainSlide/banner2.webp";
+import banner2_mobile from "./MainSlide/banner2_mobile.webp";
+import banner3 from "./MainSlide/banner3.webp";
+import banner3_mobile from "./MainSlide/banner3_mobile.webp";
+import banner4 from "./MainSlide/banner4.webp";
+import banner4_mobile from "./MainSlide/banner4_mobile.webp";
 
 import funcMain from "./priceMainPage/func.webp";
 import outMain from "./priceMainPage/out.webp";
@@ -132,8 +138,14 @@ export {
   news8,
   news9,
   bgNews,
-  banner6,
-  banner6_mobile,
+  banner1,
+  banner1_mobile,
+  banner2,
+  banner2_mobile,
+  banner3,
+  banner3_mobile,
+  banner4,
+  banner4_mobile,
   funcMain,
   outMain,
   seoMain,
