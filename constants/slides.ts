@@ -33,7 +33,7 @@ export const slidesMain = [
     imgMobile: banner2_mobile,
     textPrice: `
     <p class="xl:text-[64px] text-[32px] xl:leading-[52.57px]">от <span class='line-through'>999</span></p>
-    <p class="xl:text-[64px] text-[24px] xl:leading-[87.61px] font-semibold"><span class="xl:text-[96px] text-[32px] xl:leading-[87.61px] font-bold">499</span> BYN/в месяц</p>
+    <p class="xl:text-[64px] text-[24px] xl:leading-[87.61px] font-semibold"><span class="xl:text-[96px] text-[32px] xl:leading-[87.61px] font-bold">699</span> BYN/в месяц</p>
   `
   },
   {

@@ -27,7 +27,7 @@ export const CardNotClient = () => {
             999
           </p>
           <p className="flex items-center xl:gap-[5px] gap-[3px] xl:leading-10 leading-7 xl:text-[32px] text-2xl font-medium text-[#172026]">
-            <span>499</span>
+            <span>699</span>
 
             <span>BYN/в месяц</span>
           </p>

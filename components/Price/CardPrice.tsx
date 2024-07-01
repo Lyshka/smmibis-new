@@ -9,16 +9,20 @@ interface ICardPrice {
     img: StaticImageData;
     newPrice?: boolean;
     alt: string;
+    href: string;
   };
 }
 
 export const CardPrice = ({ price }: ICardPrice) => {
-  const { alt, description, img, newPrice, title } = price;
+  const { alt, description, img, newPrice, title, href } = price;
 
   return (
-    <div className="border-b border-[#BBBBBB] 2xl:py-6 py-2 flex 2xl:flex-row flex-col 2xl:justify-between justify-center 2xl:gap-10 gap-4 w-full">
+    <a
+      href={`/services/${href}`}
+      className="border-b border-[#BBBBBB] group 2xl:py-6 py-2 flex 2xl:flex-row flex-col 2xl:justify-between justify-center 2xl:gap-10 gap-4 w-full"
+    >
       <h4
-        className={`${delagothicone.className} 2xl:text-xl text-sm 2xl:leading-8 leading-4 2xl:w-[300px] w-full`}
+        className={`${delagothicone.className} 2xl:text-xl text-sm 2xl:leading-8 leading-4 2xl:w-[300px] w-full group-hover:text-main transition-all duration-300`}
       >
         {title}
       </h4>
@@ -51,6 +55,6 @@ export const CardPrice = ({ price }: ICardPrice) => {
           )}
         </div>
       </div>
-    </div>
+    </a>
   );
 };
