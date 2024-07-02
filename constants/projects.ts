@@ -19,6 +19,8 @@ import {
   project18_smm,
   project19_site,
   project20_site,
+  project21_site,
+  project22_site,
 } from "@/assets/img";
 
 export enum Categories {
@@ -139,13 +141,23 @@ export const projects = [
     category: Categories.smm,
   },
   {
-    id: 19,  
+    id: 19,
     img: project19_site,
     category: Categories.sites,
   },
   {
-    id: 20,  
+    id: 20,
     img: project20_site,
+    category: Categories.sites,
+  },
+  {
+    id: 21,
+    img: project21_site,
+    category: Categories.sites,
+  },
+  {
+    id: 22,
+    img: project22_site,
     category: Categories.sites,
   },
 ];
