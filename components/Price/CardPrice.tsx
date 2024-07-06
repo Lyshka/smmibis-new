@@ -28,9 +28,10 @@ export const CardPrice = ({ price }: ICardPrice) => {
       </h4>
 
       <div className="flex 2xl:flex-row 2xl:gap-6 gap-4 flex-col-reverse">
-        <p className="2xl:text-lg text-xs 2xl:leading-8 leading-4 2xl:w-[418px] w-full">
-          {description}
-        </p>
+        <p
+          dangerouslySetInnerHTML={{ __html: description }}
+          className="2xl:text-lg text-xs 2xl:leading-8 leading-4 2xl:w-[418px] w-full"
+        />
 
         <div className="relative">
           <Image

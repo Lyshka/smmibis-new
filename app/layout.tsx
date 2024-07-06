@@ -8,7 +8,8 @@ const jost = Jost({ subsets: ["cyrillic"] });
 
 export const metadata: Metadata = {
   title: "Ибис маркетинг| Создание сайтов| SMM |Реклама",
-  description: "Агентство Ибис Маркетинг занимается разработкой продающих сайтов, продвижением в соц. сетях, SEO",
+  description:
+    "Ибис маркетинг — цифровое маркетинговое агентство полного цикла в Могилеве. SMM | Разработка сайтов | обслуживание сайтов| SEO| Таргет и контекстная реклама | Дизайн | Создание контента",
 };
 
 export default function RootLayout({
@@ -18,9 +19,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-        <MainContextProvider>
-          <body className={jost.className}>{children}</body>
-        </MainContextProvider>
+      <MainContextProvider>
+        <body className={`${jost.className} overflow-x-hidden`}>{children}</body>
+      </MainContextProvider>
     </html>
   );
 }

@@ -21,7 +21,7 @@ export const MenuMobileHeader = () => {
   return (
     <>
       {isOpenMenuHeader && (
-        <div className="flex flex-col">
+        <div className="flex flex-col w-full">
           <ul className="flex flex-col gap-6 border-b-2 border-[#F4F4F4] pb-4">
             {mainMenu.map(({ id, title, url, addition }) => (
               <li key={id} className="list-header-li group hover:text-main">
@@ -31,9 +31,9 @@ export const MenuMobileHeader = () => {
                       className="flex items-center gap-2"
                       onClick={toggleSubMenu}
                     >
-                      <Link href={url} className="uppercase">
+                      <span href={url} className="uppercase">
                         {title}
-                      </Link>
+                      </span>
                       {
                         <IoIosArrowDown
                           className={clsx(
