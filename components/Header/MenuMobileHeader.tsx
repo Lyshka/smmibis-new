@@ -31,7 +31,7 @@ export const MenuMobileHeader = () => {
                       className="flex items-center gap-2"
                       onClick={toggleSubMenu}
                     >
-                      <span href={url} className="uppercase">
+                      <span className="uppercase">
                         {title}
                       </span>
                       {
