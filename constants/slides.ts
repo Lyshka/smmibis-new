@@ -7,9 +7,20 @@ import {
   banner3_mobile,
   banner4,
   banner4_mobile,
+  banner5,
+  banner5_mobile,
 } from "@/assets/img";
 
 export const slidesMain = [
+  {
+    id: 5,
+    title: "РАЗРАБОТКА САЙТОВ ДЛЯ БИЗНЕСА<br/><br/>ПОД КЛЮЧ + SEO",
+    description:
+      "Заполните заявку прямо сейчас и получите эксклюзивный пакет услуг со скидкой!",
+    img: banner5,
+    buttonText: "Заполнить форму",
+    imgMobile: banner5_mobile,
+  },
   {
     id: 1,
     title: "Твой<br/>маркетинговый отдел",
@@ -21,7 +32,7 @@ export const slidesMain = [
     textPrice: `
     <p class="xl:text-[64px] text-[32px] xl:leading-[52.57px]">от <span class='line-through'>1999</span></p>
     <p class="xl:text-[64px] text-[24px] xl:leading-[87.61px] font-semibold"><span class="xl:text-[96px] text-[32px] xl:leading-[87.61px] font-bold">999</span> BYN/в месяц</p>
-    `
+    `,
   },
   {
     id: 2,
@@ -34,7 +45,7 @@ export const slidesMain = [
     textPrice: `
     <p class="xl:text-[64px] text-[32px] xl:leading-[52.57px]">от <span class='line-through'>999</span></p>
     <p class="xl:text-[64px] text-[24px] xl:leading-[87.61px] font-semibold"><span class="xl:text-[96px] text-[32px] xl:leading-[87.61px] font-bold">699</span> BYN/в месяц</p>
-  `
+  `,
   },
   {
     id: 3,
@@ -47,7 +58,7 @@ export const slidesMain = [
     textPrice: `
     <p class="xl:text-[64px] text-[32px] xl:leading-[52.57px]">от <span class='line-through'>2499</span></p>
     <p class="xl:text-[64px] text-[24px] xl:leading-[87.61px] font-semibold"><span class="xl:text-[96px] text-[32px] xl:leading-[87.61px] font-bold">1499</span> BYN/в месяц</p>
-  `
+  `,
   },
   {
     id: 4,

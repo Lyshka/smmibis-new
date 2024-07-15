@@ -16,7 +16,7 @@ export const DiscountPopup = () => {
   useEffect(() => {
     const id = setTimeout(() => {
       toggleDiscount();
-    }, 5000);
+    }, 20000);
 
     return () => clearTimeout(id);
   }, []);

@@ -14,11 +14,11 @@ export default function Home() {
   return (
     <>
       <MainSlider />
-      <Coloboration />
       <About />
-      <Price />
-      <Packages />
+      <Coloboration />
       <Projects />
+      <Packages />
+      <Price />
       <Comments />
       <Contacts />
       <News />

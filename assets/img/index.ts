@@ -55,6 +55,8 @@ import banner3 from "./MainSlide/banner3.webp";
 import banner3_mobile from "./MainSlide/banner3_mobile.webp";
 import banner4 from "./MainSlide/banner4.webp";
 import banner4_mobile from "./MainSlide/banner4_mobile.webp";
+import banner5 from "./MainSlide/banner5.webp";
+import banner5_mobile from "./MainSlide/banner5_mobile.webp";
 
 import funcMain from "./priceMainPage/func.webp";
 import outMain from "./priceMainPage/out.webp";
@@ -148,6 +150,8 @@ export {
   banner3_mobile,
   banner4,
   banner4_mobile,
+  banner5,
+  banner5_mobile,
   funcMain,
   outMain,
   seoMain,
