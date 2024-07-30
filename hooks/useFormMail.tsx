@@ -16,6 +16,29 @@ export const useFormMail = ({ template, toggle }: IuseFormMail) => {
   const { toggleGratitude, toggleErrorTel, isErrorTel } =
     useContext(MainContext);
 
+  function downloadFile() {
+    var fileUrl = "portf.pptx"; // URL файла для загрузки
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", fileUrl, true);
+    xhr.responseType = "blob";
+
+    xhr.onload = function () {
+      if (xhr.status === 200) {
+        var blob = xhr.response;
+        var url = window.URL.createObjectURL(blob);
+        var a = document.createElement("a");
+        a.href = url;
+        a.download = "portf.pptx"; // Имя файла для сохранения
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        window.URL.revokeObjectURL(url);
+      }
+    };
+
+    xhr.send();
+  }
+
   const sendEmail = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
@@ -97,8 +120,8 @@ export const useFormMail = ({ template, toggle }: IuseFormMail) => {
                 {
                   chat_id: -4054386788,
                   text: `<b>Клиент: </b>${name.value}
-<b>Телефон: </b> ${tel.value}
-                            `,
+              <b>Телефон: </b> ${tel.value}
+                                          `,
                   parse_mode: "html",
                 }
               );
@@ -108,13 +131,14 @@ export const useFormMail = ({ template, toggle }: IuseFormMail) => {
                 {
                   chat_id: -4054386788,
                   text: `
-<b>Клиент: </b>${name.value}
-<b>Телефон: </b> ${tel.value}`,
+              <b>Клиент: </b>${name.value}
+              <b>Телефон: </b> ${tel.value}`,
                   parse_mode: "html",
                 }
               );
             }
 
+            downloadFile();
             form.current?.reset();
 
             toggleErrorTel({ stateError: false });

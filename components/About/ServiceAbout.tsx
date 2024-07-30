@@ -25,7 +25,7 @@ export const ServiceAbout = ({ img, title, alt }: IServiceAbout) => {
         <div className="flex 2xl:justify-start justify-center items-center">
           <Link href={"#formService"}>
             <Button variant="outlined" className="font-medium">
-              Получить предложение
+              Получить КП
             </Button>
           </Link>
         </div>

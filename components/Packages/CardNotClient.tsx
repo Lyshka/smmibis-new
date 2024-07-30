@@ -66,7 +66,7 @@ export const CardNotClient = () => {
         onClick={toggleFeedBack}
         className="bg-white xl:py-3.5 py-2.5 w-full px-[30px] flex justify-center items-center text-[#4328EB] text-center font-medium xl:text-base text-sm rounded-[4px]"
       >
-        Получить предложение
+        Получить КП
       </button>
     </div>
   );
