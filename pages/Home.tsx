@@ -8,6 +8,7 @@ import { DiscountPopup } from "@/components/Popup/DiscountPopup";
 import { FeedbackPopup } from "@/components/Popup/FeedbackPopup";
 import { Price } from "@/components/Price/Price";
 import { Projects } from "@/components/Projects/Projects";
+import { ServiceFormBlock } from "@/components/ServiceFormBlock";
 import { MainSlider } from "@/components/Slider/MainSlider";
 
 export default function Home() {
@@ -19,6 +20,7 @@ export default function Home() {
       <Projects />
       <Packages />
       <Price />
+      <ServiceFormBlock />
       <Comments />
       <Contacts />
       <News />

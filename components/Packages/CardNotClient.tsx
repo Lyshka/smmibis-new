@@ -16,7 +16,7 @@ export const CardNotClient = () => {
   const { toggleFeedBack } = useContext(MainContext);
 
   return (
-    <div className="bg-[#DBD8FF] xl:p-6 p-4 xl:h-[646px] h-full flex flex-col xl:justify-between xl:gap-0 gap-7 rounded-lg xl:leading-6 leading-4">
+    <div className="bg-[#DBD8FF] xl:p-6 p-4 xl:h-[646px] h-full flex flex-col xl:justify-between xl:gap-0 notClient-card-home-bg gap-7 rounded-lg xl:leading-6 leading-4">
       <div className="xl:space-y-8 space-y-[22px] text-white">
         <p className="xl:text-[40px] text-2xl font-extrabold text-[#4328EB]">
           Нет клиентов?
@@ -64,7 +64,7 @@ export const CardNotClient = () => {
 
       <button
         onClick={toggleFeedBack}
-        className="bg-white xl:py-3.5 py-2.5 w-full px-[30px] flex justify-center items-center text-[#4328EB] text-center font-medium xl:text-base text-sm rounded-[4px]"
+        className="bg-[#4328EB] xl:py-3.5 py-2.5 w-full px-[30px] flex justify-center items-center text-white text-center font-medium xl:text-base text-sm rounded-[40px]"
       >
         Получить КП
       </button>

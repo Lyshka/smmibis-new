@@ -15,31 +15,41 @@ export const ServiceForm = ({ ...props }: ServiceFormType) => {
   });
 
   return (
-    <form
-      name="serviceForm"
-      ref={form}
-      onSubmit={sendEmail}
-      {...props}
-      className="flex 2xl:flex-row flex-col items-center gap-6 w-full"
-    >
-      <Input
-        className="2xl:min-w-[307px] min-w-full"
-        placeholder="Имя *"
-        name="name"
-        required
-      />
+    <>
+      <form
+        name="serviceForm"
+        ref={form}
+        onSubmit={sendEmail}
+        {...props}
+        className="grid 2xl:grid-cols-4 grid-cols-1 items-center gap-[30px] w-full"
+      >
+        <Input
+          className="2xl:min-w-[307px] min-w-full"
+          placeholder="Имя *"
+          name="name"
+          required
+        />
 
-      <Input
-        className="2xl:min-w-[307px] min-w-full"
-        placeholder="+375"
-        type="tel"
-        name="tel"
-        required
-      />
+        <Input
+          className="2xl:min-w-[307px] min-w-full"
+          placeholder="+375"
+          type="tel"
+          name="tel"
+          required
+        />
+
+        <Input
+          className="2xl:min-w-[307px] min-w-full"
+          placeholder="Сайт: www.site.by"
+          type="url"
+          name="url"
+        />
+
+        <Button className="uppercase 2xl:leading-4 2xl:w-auto xl:max-w-[307px] w-full">
+          заказать
+        </Button>
+      </form>
       <Recaptcha recaptchaRef={captcha} />
-      <Button className="uppercase 2xl:leading-4 2xl:w-auto w-full">
-        отправить
-      </Button>
-    </form>
+    </>
   );
 };

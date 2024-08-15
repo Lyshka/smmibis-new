@@ -137,4 +137,16 @@
   .input-tel {
     @apply !flex-1 2xl:!py-4 !py-3 !rounded-lg !bg-[#F4F4F4] placeholder:!text-[#A7A7A7] 2xl:!text-sm !text-xs !leading-4 !h-auto !border-none !w-full;
   }
+
+  .busnes-card-home-bg {
+    background: linear-gradient(180deg, #4328eb 0%, #ded9fd 100%);
+  }
+
+  .notClient-card-home-bg {
+    background: linear-gradient(180deg, #dbd8ff 0%, #fafaff 100%);
+  }
+
+  .yourMarketing-card-home-bg {
+    background: linear-gradient(180deg, #ff6058 0%, #ffbdba 94.1%);
+  }
 }

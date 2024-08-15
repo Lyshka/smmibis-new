@@ -26,7 +26,7 @@ export const CardMarket = () => {
     <div
       className={`xl:p-6 p-4 ${
         open ? "h-full" : "xl:h-[646px] h-full"
-      }  flex flex-col xl:justify-between xl:gap-0 bg-[#FF6058] rounded-lg xl:leading-6 leading-4`}
+      }  flex flex-col xl:justify-between xl:gap-0 yourMarketing-card-home-bg rounded-lg xl:leading-6 leading-4`}
     >
       <div className="xl:space-y-8 space-y-[22px] text-white">
         <p className="xl:text-[30px] text-2xl xl:leading-[38px] leading-[26.69px] font-extrabold">
@@ -96,7 +96,7 @@ export const CardMarket = () => {
 
       <button
         onClick={toggleFeedBack}
-        className="bg-white xl:py-3.5 py-2.5 w-full px-[30px] flex justify-center items-center text-[#4328EB] text-center font-medium xl:text-base text-sm rounded-[4px]"
+        className="bg-[#4328EB] xl:py-3.5 py-2.5 w-full px-[30px] flex justify-center items-center text-white text-center font-medium xl:text-base text-sm rounded-[40px]"
       >
         Получить КП
       </button>
