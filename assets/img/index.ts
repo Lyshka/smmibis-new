@@ -58,14 +58,6 @@ import banner4_mobile from "./MainSlide/banner4_mobile.webp";
 import banner5 from "./MainSlide/banner5.webp";
 import banner5_mobile from "./MainSlide/banner5_mobile.webp";
 
-import funcMain from "./priceMainPage/func.webp";
-import outMain from "./priceMainPage/out.webp";
-import seoMain from "./priceMainPage/seo.webp";
-import smmMain from "./priceMainPage/smm.webp";
-import targetMain from "./priceMainPage/target.webp";
-import webMain from "./priceMainPage/web.webp";
-import video from "./priceMainPage/video.webp";
-
 import project1_smm from "./projects/avansum_smm.webp";
 import project2_smm from "./projects/cold-frog_smm.webp";
 import project3_site from "./projects/dsk_site.webp";
@@ -152,13 +144,6 @@ export {
   banner4_mobile,
   banner5,
   banner5_mobile,
-  funcMain,
-  outMain,
-  seoMain,
-  smmMain,
-  targetMain,
-  webMain,
-  video,
   project1_smm,
   project2_smm,
   project3_site,

@@ -6,7 +6,7 @@ import { Timer } from "./Timer";
 
 export const Packages = () => {
   return (
-    <section className="flex justify-center items-center">
+    <section className="flex justify-center items-center 2xl:pb-[100px] pb-6">
       <div className="xl:space-y-[75px] space-y-5 container flex flex-col">
         <ServiceTitle title="Пакеты" />
 

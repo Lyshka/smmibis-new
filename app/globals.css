@@ -149,4 +149,8 @@
   .yourMarketing-card-home-bg {
     background: linear-gradient(180deg, #ff6058 0%, #ffbdba 94.1%);
   }
+
+  #formHomeDownFooter input {
+    @apply bg-[#F5F5F5] 2xl:border-[1.11px] border-[0.45px] outline-none border-[#E0E0E0] 2xl:rounded-[11px] rounded-md w-full 2xl:h-[62px] h-10 2xl:px-5 px-2 2xl:text-xl text-sm 2xl:leading-[28.94px] placeholder:text-[#666666];
+  }
 }

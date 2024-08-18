@@ -53,51 +53,6 @@ export const useFormMail = ({ template, toggle }: IuseFormMail) => {
     const name: any = form.current?.elements.namedItem("name");
     const tel: any = form.current?.elements.namedItem("tel");
 
-    // test
-    //     if (
-    //       formNameService === "serviceForm" ||
-    //       checkLengthNumber(isErrorTel.tel)
-    //     ) {
-    //       await captcha.current?.executeAsync().then(async (res) => {
-    //         toggleGratitude(true);
-
-    //         if (tel) {
-    //           axios.post(
-    //             "https://api.telegram.org/bot6597877649:AAEfIM7h9IYg7m688vgZ_WcCnb7R2QdguMg/sendMessage",
-    //             {
-    //               chat_id: -4054386788,
-    //               text: `<b>Клиент: </b>${name.value}
-    // <b>Email: </b>${email.value}
-    // <b>Телефон: </b> ${tel.value}
-    //                 `,
-    //               parse_mode: "html",
-    //             }
-    //           );
-    //         } else {
-    //           axios.post(
-    //             "https://api.telegram.org/bot6597877649:AAEfIM7h9IYg7m688vgZ_WcCnb7R2QdguMg/sendMessage",
-    //             {
-    //               chat_id: -4054386788,
-    //               text: `<b>Клиент: </b>${name.value}
-    // <b>Email: </b>${email.value}`,
-    //               parse_mode: "html",
-    //             }
-    //           );
-    //         }
-
-    //         form.current?.reset();
-
-    //         if (toggle) {
-    //           toggle();
-    //         }
-    //         setTimeout(() => {
-    //           toggleGratitude(false);
-    //         }, 5000);
-    //       });
-
-    //       toggleErrorTel({ stateError: false });
-    //     }
-
     if (
       formNameService === "serviceForm" ||
       checkLengthNumber(isErrorTel.tel)

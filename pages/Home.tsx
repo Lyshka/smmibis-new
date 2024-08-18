@@ -2,6 +2,7 @@ import { About } from "@/components/About/About";
 import { Coloboration } from "@/components/Coloboration";
 import { Comments } from "@/components/Comments";
 import { Contacts } from "@/components/Contacts";
+import FormBlock from "@/components/Home/FormBlock";
 import { News } from "@/components/News/News";
 import { Packages } from "@/components/Packages/Packages";
 import { DiscountPopup } from "@/components/Popup/DiscountPopup";
@@ -17,13 +18,14 @@ export default function Home() {
       <MainSlider />
       <About />
       <Coloboration />
+      <Price />
       <Projects />
       <Packages />
-      <Price />
       <ServiceFormBlock />
       <Comments />
       <Contacts />
       <News />
+      <FormBlock />
       <DiscountPopup />
       <FeedbackPopup />
     </>
