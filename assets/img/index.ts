@@ -47,6 +47,14 @@ import comment3 from "./comment/comment3.webp";
 import comment4 from "./comment/comment4.webp";
 import comment5 from "./comment/comment5.webp";
 
+import priceCard1 from "./priceMainPage/priceCard1.webp";
+import priceCard2 from "./priceMainPage/priceCard2.webp";
+import priceCard3 from "./priceMainPage/priceCard3.webp";
+import priceCard4 from "./priceMainPage/priceCard4.webp";
+import priceCard5 from "./priceMainPage/priceCard5.webp";
+import priceCard6 from "./priceMainPage/priceCard6.webp";
+import priceCard7 from "./priceMainPage/priceCard7.webp";
+
 import banner1 from "./MainSlide/banner1.webp";
 import banner1_mobile from "./MainSlide/banner1_mobile.webp";
 import banner2 from "./MainSlide/banner2.webp";
@@ -185,6 +193,13 @@ export {
   comment3,
   comment4,
   comment5,
+  priceCard1,
+  priceCard2,
+  priceCard3,
+  priceCard4,
+  priceCard5,
+  priceCard6,
+  priceCard7,
   bookingService,
   contextualAdvertising,
   developmentOfAUniqueDesign,
