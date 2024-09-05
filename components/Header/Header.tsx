@@ -14,6 +14,7 @@ import { calibry } from "@/assets/font";
 
 export const Header = () => {
   const { isOpenMenuHeader, toggleMenuHeader } = useContext(MainContext);
+  const { toggleFeedBack } = useContext(MainContext);
 
   return (
     <header className="flex 2xl:flex-row flex-col justify-center items-center 2xl:py-4 py-0 border-b-2 border-[#F4F4F4]">
@@ -47,7 +48,7 @@ export const Header = () => {
           ))}
         </ul>
 
-        <div className="hidden 2xl:flex flex-col gap-2">
+        {/* <div className="hidden 2xl:flex flex-col gap-2">
           <Link className="flex items-center gap-4" href={"tel:+375339157676"}>
             <LuPhone className="w-6 h-6" />
             <span className="whitespace-nowrap">+375 (33) 915 - 76 - 76</span>
@@ -59,7 +60,14 @@ export const Header = () => {
             <MdOutlineMailOutline className="w-6 h-6" />
             mail@smm-ibis.by
           </Link>
-        </div>
+        </div> */}
+
+        <button
+          onClick={toggleFeedBack}
+          className="max-w-[192px] w-full xl:flex hidden justify-center items-center h-11 border border-black text-base leading-6 text-[#333333] tracking-[1px] uppercase rounded-full"
+        >
+          заказать звонок
+        </button>
       </div>
 
       <div className="container 2xl:hidden py-0">

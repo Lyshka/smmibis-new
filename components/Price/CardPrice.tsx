@@ -15,7 +15,7 @@ export const CardPrice = ({ cardPrice }: ICardPrice) => {
 
   return (
     <Link
-      className="block xl:h-[542px] h-[325px] select-none relative"
+      className="block xl:h-[542px] h-[400px] select-none relative"
       href={`/services${href}`}
     >
       <Image
@@ -26,15 +26,15 @@ export const CardPrice = ({ cardPrice }: ICardPrice) => {
         alt="Услуги"
       />
 
-      <div className="relative z-[1] h-full mx-auto max-w-[306.58px] w-full xl:pt-10 pt-5 xl:pb-20 pb-10 flex justify-between flex-col items-center">
-        <div className="flex flex-col xl:gap-5 gap-2.5 text-center bg-white/60 xl:rounded-3xl rounded-xl xl:p-5 p-2">
+      <div className="relative z-[1] h-full mx-auto max-w-[316.17px] w-full xl:pt-6 pt-5 xl:pb-6 pb-10 flex justify-between flex-col items-center">
+        <div className="flex flex-col xl:gap-4 items-center gap-2.5 text-center">
           <span
-            className={`py-[7px] xl:px-[15px] px-2.5 xl:text-base text-[13px] xl:leading-[23.33px] leading-[12px] text-[#606060] uppercase font-medium bg-white/50 xl:rounded-3xl rounded-[12px]`}
+            className={`py-[7px] xl:px-[15px] px-2.5 xl:text-base text-[13px] xl:leading-[23.33px] leading-[12px] text-[#606060] uppercase font-medium max-w-[162px] bg-white/50 xl:rounded-3xl rounded-[12px]`}
           >
             IBIS MARKETING
           </span>
 
-          <h2 className="xl:text-[28px] text-base xl:leading-[32.67px] leading-[16.8px] text-[#252525]">
+          <h2 className="xl:text-[28px] text-base xl:leading-[32.67px] leading-[16.8px] text-[#252525] font-medium">
             {title}
           </h2>
 

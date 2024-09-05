@@ -9,7 +9,7 @@ import "swiper/css";
 
 export const Price = () => {
   return (
-    <section className="flex justify-center items-center w-full xl:px-0 px-7">
+    <section className="flex justify-center items-center w-full xl:px-0 px-7 max-w-[1368px] mx-auto overflow-hidden">
       <div className="flex flex-col 2xl:gap-20 gap-10 items-center w-full">
         <Title text="Наши услуги" />
 
@@ -32,9 +32,9 @@ export const Price = () => {
           className="w-full"
           breakpoints={{
             1368: {
-              slidesPerView: 5,
+              slidesPerView: 3,
               initialSlide: 3,
-              spaceBetween: 40,
+              spaceBetween: 37,
               navigation: {
                 prevEl: "#swipperSliderHomePriceNavigation .prevBtn",
                 nextEl: "#swipperSliderHomePriceNavigation .nextBtn",
