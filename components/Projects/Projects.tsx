@@ -1,5 +1,6 @@
 "use client";
 
+import { Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { useContext, useEffect, useState } from "react";
@@ -41,9 +42,14 @@ export const Projects = () => {
           <SelectedMenu />
         </div>
 
-        <div className="flex justify-center items-center xl:max-w-[1300px] w-full">
+        <div className="flex flex-col gap-10 justify-center items-center xl:max-w-[1300px] w-full">
           <Swiper
+            modules={[Navigation]}
             className="w-full"
+            navigation={{
+              prevEl: "#swipperSliderHomePortfolioNavigation .prevBtn",
+              nextEl: "#swipperSliderHomePortfolioNavigation .nextBtn",
+            }}
             breakpoints={{
               1368: {
                 slidesPerView: 3,
@@ -66,10 +72,51 @@ export const Projects = () => {
               </SwiperSlide>
             ))}
           </Swiper>
+
+          <nav
+            id="swipperSliderHomePortfolioNavigation"
+            className="bg-[#F5F7FA] p-2 rounded-[32px]  flex items-center gap-4"
+          >
+            <button className="flex justify-center items-center w-8 h-8 bg-black/50 rounded-full prevBtn">
+              <svg
+                width="17"
+                height="17"
+                viewBox="0 0 17 17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10.5 12.166L6.5 8.16602L10.5 4.16602"
+                  stroke="white"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </button>
+
+            <button className="flex justify-center items-center w-8 h-8 bg-black/50 rounded-full nextBtn">
+              <svg
+                width="17"
+                height="17"
+                viewBox="0 0 17 17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6.5 4.16602L10.5 8.16602L6.5 12.166"
+                  stroke="white"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </button>
+          </nav>
         </div>
 
         <Button onClick={onDownloadPortfolio}>Скачать портфолио</Button>
       </div>
-    </section>
+    </section >
   );
 };

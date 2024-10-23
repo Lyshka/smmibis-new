@@ -51,6 +51,45 @@ export const projectsCategories: IprojectsCategories[] = [
 
 export const projects = [
   {
+    id: 11,
+    img: project3_site,
+    title: "DSK",
+    tags: [
+      "Исследования",
+      "Прототипирование",
+      "Дизайн",
+      "Разработка",
+      "Поддержка",
+    ],
+    category: Categories.sites,
+  },
+  {
+    id: 4,
+    img: project13_site,
+    title: "Royal Park",
+    tags: [
+      "Исследования",
+      "Прототипирование",
+      "Дизайн",
+      "Разработка",
+      "Поддержка",
+    ],
+    category: Categories.sites,
+  },
+  {
+    id: 17,
+    img: project9_site,
+    title: "Miracle Cars",
+    tags: [
+      "Исследования",
+      "Прототипирование",
+      "Дизайн",
+      "Разработка",
+      "Поддержка",
+    ],
+    category: Categories.sites,
+  },
+  {
     id: 1,
     img: project10_site,
     title: "РМЦ Калиброн",
@@ -88,19 +127,6 @@ export const projects = [
       "Поддержка",
     ],
     category: Categories.smm,
-  },
-  {
-    id: 4,
-    img: project13_site,
-    title: "Royal Park",
-    tags: [
-      "Исследования",
-      "Прототипирование",
-      "Дизайн",
-      "Разработка",
-      "Поддержка",
-    ],
-    category: Categories.sites,
   },
   {
     id: 5,
@@ -181,19 +207,6 @@ export const projects = [
     category: Categories.smm,
   },
   {
-    id: 11,
-    img: project3_site,
-    title: "DSK",
-    tags: [
-      "Исследования",
-      "Прототипирование",
-      "Дизайн",
-      "Разработка",
-      "Поддержка",
-    ],
-    category: Categories.sites,
-  },
-  {
     id: 12,
     img: project4_site,
     title: "JAC",
@@ -257,19 +270,6 @@ export const projects = [
       "Поддержка",
     ],
     category: Categories.smm,
-  },
-  {
-    id: 17,
-    img: project9_site,
-    title: "Miracle Cars",
-    tags: [
-      "Исследования",
-      "Прототипирование",
-      "Дизайн",
-      "Разработка",
-      "Поддержка",
-    ],
-    category: Categories.sites,
   },
   {
     id: 18,
